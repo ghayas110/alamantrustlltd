@@ -17,7 +17,7 @@ export default function About() {
                     </Reveal>
                 </div>
 
-                <div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
+                <div className="grid-2" style={{ alignItems: 'center' }}>
                     <Reveal>
                         <img src="/images/hero.png" alt="About Al Aman Trust" style={{ width: '100%', borderRadius: '20px', boxShadow: '20px 20px 0 var(--primary-gold)' }} />
                     </Reveal>
@@ -37,7 +37,7 @@ export default function About() {
                 <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
                     <Reveal>
                         <h2 className="serif">Our Fundamental <span className="gold">Values</span></h2>
-                        <div className="grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', marginTop: '4rem' }}>
+                        <div className="grid-3" style={{ marginTop: '4rem' }}>
                             <div>
                                 <h3 className="gold">Integrity</h3>
                                 <p>Upholding the highest ethical standards in every transaction.</p>
