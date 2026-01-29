@@ -14,6 +14,28 @@ export default function Home() {
                 </Reveal>
             </section>
 
+            <section className="video-section">
+                <Reveal>
+                    <div className="container">
+                        <div className="video-wrapper">
+                            <iframe 
+                                className="styled-iframe"
+                                src="https://www.youtube.com/embed/S_CInasqBR0?autoplay=1&mute=1&loop=1&playlist=S_CInasqBR0&controls=0" 
+                                title="Wealth Management Video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowFullScreen
+                            ></iframe>
+                            <div className="video-overlay">
+                                <div className="video-content">
+                                    <h2 className="serif">Leading with <span className="gold">Integrity</span></h2>
+                                    <p>Experience the intersection of tradition and modern excellence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Reveal>
+            </section>
+
             <section className="section">
                 <div className="section-header">
                     <Reveal>
@@ -52,14 +74,14 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section dark-section">
+            {/* <section className="section dark-section">
                 <Reveal>
                     <div className="text-center" style={{ textAlign: 'center' }}>
                         <h2 className="serif" style={{ fontSize: '3rem', marginBottom: '2rem' }}>Ready to align your business with <span className="gold">faith?</span></h2>
                         <Link href="/contact" className="btn">Get Started Today</Link>
                     </div>
                 </Reveal>
-            </section>
+            </section> */}
         </>
     );
 }
