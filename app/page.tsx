@@ -43,31 +43,31 @@ export default function Home() {
                 </div>
                 <div className="grid">
                     <Reveal>
-                        <div className="card">
+                        <Link href="/services/corporate-solutions" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <img src="/images/service-1.png" alt="Business Solutions" className="card-image" />
                             <div className="card-body">
                                 <h3>Tailored Business Solutions</h3>
                                 <p>Customized strategies designed to empower your business growth while maintaining strict Shariah compliance.</p>
                             </div>
-                        </div>
+                        </Link>
                     </Reveal>
                     <Reveal delay={0.1}>
-                        <div className="card">
+                        <Link href="/services/fund-services" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <img src="/images/service-2.png" alt="Fund Services" className="card-image" />
                             <div className="card-body">
                                 <h3>Fund Services</h3>
                                 <p>Manage your investments ethically and efficiently with our expert fund administration and compliance team.</p>
                             </div>
-                        </div>
+                        </Link>
                     </Reveal>
                     <Reveal delay={0.2}>
-                        <div className="card">
+                        <Link href="/services/private-client-advisory" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <img src="/images/service-3.png" alt="Private Client" className="card-image" />
                             <div className="card-body">
                                 <h3>Private Client Advisory</h3>
                                 <p>Personalized guidance for your financial journey, ensuring your wealth management aligns with your values.</p>
                             </div>
-                        </div>
+                        </Link>
                     </Reveal>
                 </div>
             </section>
