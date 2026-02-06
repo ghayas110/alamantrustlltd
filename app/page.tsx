@@ -1,40 +1,38 @@
 import Reveal from "@/components/Reveal";
 import Link from 'next/link';
+import BannerSlider from "@/components/BannerSlider";
 
 export default function Home() {
     return (
         <>
-            <section className="hero">
-                <Reveal>
-                    <div className="hero-content">
-                        <h1 className="serif">Trust in <span className="gold">Excellence</span></h1>
-                        <p>Business and Wealth solutions in line with your faith and ethics. Empirically grounded, ethically driven.</p>
-                        <Link href="/services" className="btn">Explore Services</Link>
-                    </div>
-                </Reveal>
-            </section>
-
-            <section className="video-section">
-                <Reveal>
-                    <div className="container">
-                        <div className="video-wrapper">
-                            <iframe 
-                                className="styled-iframe"
-                                src="https://www.youtube.com/embed/S_CInasqBR0?autoplay=1&mute=1&loop=1&playlist=S_CInasqBR0&controls=0" 
-                                title="Wealth Management Video"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowFullScreen
-                            ></iframe>
-                            <div className="video-overlay">
-                                <div className="video-content">
-                                    <h2 className="serif">Leading with <span className="gold">Integrity</span></h2>
-                                    <p>Experience the intersection of tradition and modern excellence.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </Reveal>
-            </section>
+            <BannerSlider 
+                slides={[
+                    {
+                        type: 'video',
+                        src: '/video/hero-video.mp4',
+                        title: 'Trust in <span class="gold">Excellence</span>',
+                        subtitle: 'Business and Wealth solutions in line with your faith'
+                    },
+                    {
+                        type: 'image',
+                        src: '/images/banner1.png',
+                        title: 'Corporate <span class="gold">Leadership</span>',
+                        subtitle: 'Empowering Decisions with Integrity'
+                    },
+                    {
+                        type: 'image',
+                        src: '/images/banner2.png',
+                        title: 'Premium <span class="gold">Wealth</span> Management',
+                        subtitle: 'Securing Your Legacy for Generations'
+                    },
+                    {
+                        type: 'image',
+                        src: '/images/banner3.png',
+                        title: 'Global <span class="gold">Vision</span>',
+                        subtitle: 'Connecting Tradition with Modern Success'
+                    }
+                ]}
+            />
 
             <section className="section">
                 <div className="section-header">
