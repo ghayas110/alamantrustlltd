@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: 'About | Al Aman Trust',
+    description: 'Learn about Al Aman Trust Services, a licensed managed trust company in Labuan, Malaysia, backed by the RUSD Group.',
 };
 
 export default function About() {
@@ -11,46 +12,147 @@ export default function About() {
             <section className="section">
                 <div className="section-header">
                     <Reveal>
-                        <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>Our Purpose</span>
-                        <h2 className="serif">Commitment to <span className="gold">Trust</span></h2>
-                        <p>Tailored Corporate & Private Wealth Solutions to meet your aspirations & faith.</p>
+                        <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>About Us</span>
+                        <h2 className="serif">Who We <span className="gold">Are</span></h2>
                     </Reveal>
                 </div>
 
-                <div className="grid-2" style={{ alignItems: 'center' }}>
+                <div className="grid-2" style={{ alignItems: 'start', gap: '4rem' }}>
                     <Reveal>
-                        <img src="/images/hero.png" alt="About Al Aman Trust" style={{ width: '100%', borderRadius: '20px', boxShadow: '20px 20px 0 var(--primary-gold)' }} />
+                        <h3 className="serif" style={{ fontSize: '1.8rem', marginBottom: '1.5rem' }}>Built on <span className="gold">Trust</span>, Backed by <span className="gold">Strength</span></h3>
+                        <p style={{ marginBottom: '1.5rem' }}>
+                            Al Aman Trust Services is a licensed managed trust company dedicated to providing bespoke solutions in today’s evolving business landscape. Based in the premier midshore jurisdiction of Labuan, Malaysia, we are regulated by the Labuan Financial Services Authority (Labuan FSA).
+                        </p>
+                        <p style={{ marginBottom: '1.5rem' }}>
+                            We operate as a wholly owned subsidiary of Rusd Investment Bank Inc., a premier Islamic investment bank, and are a proud member of the RUSD Group. This affiliation allows us to combine local expertise with the global strength and ethical foundations of a leading international conglomerate.
+                        </p>
+                         <p>
+                            Operating from Labuan's strategic international business and financial hub, we serve as your trusted partner in navigating the complexities of modern wealth structuring, corporate services, and fund administration. Our foundation in Islamic principles, combined with international best practices, allows us to deliver solutions that honor tradition while embracing innovation.
+                        </p>
                     </Reveal>
-                    <Reveal delay={0.1}>
-                        <h3 className="serif" style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Building lasting success <span className="gold">Guided by values</span></h3>
-                        <p>At Al Aman Trust, we recognize the challenges of today’s dynamic business environment and deliver customized solutions to address your unique needs.</p>
-                        <p style={{ marginTop: '1.5rem' }}>Our mission is to empower businesses and clients with ethical, compliant options while fostering a culture of trust and integrity. With a team of experts passionate about Shariah compliance, we focus on understanding your unique needs and delivering exceptional support.</p>
-                        <div style={{ marginTop: '3rem', padding: '2rem', background: 'var(--bg-dark)', color: 'white', borderRadius: '12px' }}>
-                            <h4 className="serif" style={{ marginBottom: '1rem' }}>Secure Your Family's Legacy</h4>
-                            <p style={{ fontSize: '0.95rem', opacity: '0.8' }}>We pave the way for sustainable growth and success in a rapidly changing business landscape through faith-based excellence.</p>
+                    <Reveal delay={0.2}>
+                         <div style={{ position: 'relative' }}>
+                            <div style={{
+                                position: 'absolute',
+                                top: '-20px',
+                                right: '-20px',
+                                width: '100%',
+                                height: '100%',
+                                border: '2px solid var(--primary-gold)',
+                                borderRadius: '20px',
+                                zIndex: 0
+                            }}></div>
+                            <img 
+                                src="/images/hero.png" 
+                                alt="Al Aman Trust" 
+                                style={{ 
+                                    width: '100%', 
+                                    borderRadius: '20px', 
+                                    position: 'relative', 
+                                    zIndex: 1,
+                                    boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                                }} 
+                            />
                         </div>
                     </Reveal>
                 </div>
             </section>
 
-            <section className="section" style={{ background: 'white' }}>
-                <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+             <section className="section" style={{ background: 'var(--bg-light)' }}>
+                <div style={{ maxWidth: '800px', margin: '0 auto' }}>
                     <Reveal>
-                        <h2 className="serif">Our Fundamental <span className="gold">Values</span></h2>
-                        <div className="grid-3" style={{ marginTop: '4rem' }}>
-                            <div>
-                                <h3 className="gold">Integrity</h3>
-                                <p>Upholding the highest ethical standards in every transaction.</p>
-                            </div>
-                            <div>
-                                <h3 className="gold">Excellence</h3>
-                                <p>Delivering superior quality in consulting and fund management.</p>
-                            </div>
-                            <div>
-                                <h3 className="gold">Faith</h3>
-                                <p>Ensuring every decision is guided by Shariah principles.</p>
-                            </div>
+                         <h2 className="serif" style={{ marginBottom: '2rem' }}>Our Heritage: <span className="gold">The RUSD Connection</span></h2>
+                         <p style={{ marginBottom: '1.5rem' }}>
+                            The RUSD Group, headquartered in Saudi Arabia, has been a pioneer in Shariah-compliant services since 2002. The name "RUSD" reflects a commitment to reviving flexible Islamic economic jurisprudence for the modern era—bridging the gap between tradition and innovation. 
+                        </p>
+                        <p>
+                            At Al Aman, we carry this legacy forward by ensuring all our operations adhere to the highest standards of corporate governance, ethical conduct, and transparency.
+                        </p>
+                    </Reveal>
+                </div>
+            </section>
+
+            <section className="section">
+                 <div className="section-header">
+                    <Reveal>
+                        <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>Core Values</span>
+                        <h2 className="serif">Our <span className="gold">Principles</span></h2>
+                         <p style={{ maxWidth: '700px', margin: '2rem auto 0' }}>
+                            Our growth is driven by a dynamic, highly experienced team respected across their respective fields. At RUSD, we maintain stringent corporate governance standards anchored in:
+                        </p>
+                    </Reveal>
+                </div>
+
+                <div className="grid-2" style={{ marginTop: '2rem' }}>
+                    <Reveal delay={0.1}>
+                         <div style={{ padding: '2rem', background: 'var(--bg-dark)', borderRadius: '12px', color: 'white', height: '100%' }}>
+                            <h3 className="gold" style={{ marginBottom: '1rem' }}>Ethical Conduct</h3>
+                            <p>Unwavering integrity in every interaction.</p>
                         </div>
+                    </Reveal>
+                     <Reveal delay={0.2}>
+                         <div style={{ padding: '2rem', background: 'var(--bg-dark)', borderRadius: '12px', color: 'white', height: '100%' }}>
+                            <h3 className="gold" style={{ marginBottom: '1rem' }}>Fairness</h3>
+                            <p>Equitable treatment of all stakeholders.</p>
+                        </div>
+                    </Reveal>
+                     <Reveal delay={0.3}>
+                         <div style={{ padding: '2rem', background: 'var(--bg-dark)', borderRadius: '12px', color: 'white', height: '100%' }}>
+                            <h3 className="gold" style={{ marginBottom: '1rem' }}>Transparency</h3>
+                            <p>Clear communication and open processes.</p>
+                        </div>
+                    </Reveal>
+                     <Reveal delay={0.4}>
+                         <div style={{ padding: '2rem', background: 'var(--bg-dark)', borderRadius: '12px', color: 'white', height: '100%' }}>
+                            <h3 className="gold" style={{ marginBottom: '1rem' }}>Accountability</h3>
+                            <p>Responsibility for our actions and outcomes.</p>
+                        </div>
+                    </Reveal>
+                </div>
+                 <div style={{ marginTop: '3rem', textAlign: 'center' }}>
+                     <Reveal>
+                        <p className="gold" style={{ fontSize: '1.2rem', fontStyle: 'italic' }}>"These principles guide our day-to-day operations and ensure that trust remains at the heart of everything we do."</p>
+                    </Reveal>
+                 </div>
+            </section>
+
+            <section className="section" style={{ background: 'var(--bg-light)' }}>
+                <div className="section-header">
+                    <Reveal>
+                        <h2 className="serif">Why Choose <span className="gold">Al Aman Trust Services</span></h2>
+                    </Reveal>
+                </div>
+                
+                 <div className="grid-3" style={{ marginTop: '2rem' }}>
+                    {[
+                        { title: "Regulatory Certainty", desc: "Full licensing and oversight by Labuan FSA" },
+                        { title: "Shariah Compliance", desc: "Structures and solutions aligned with Islamic principles" },
+                        { title: "Group Strength", desc: "The backing of the diversified RUSD Group" },
+                        { title: "Tailored Solutions", desc: "Services customized to your specific requirements" },
+                        { title: "Strategic Location", desc: "Access to Asia's opportunities through Labuan's international platform" },
+                        { title: "Experienced Team", desc: "Professionals with deep expertise in trust, corporate, and fund services" }
+                    ].map((item, index) => (
+                        <Reveal key={index} delay={index * 0.1}>
+                             <div style={{ 
+                                padding: '2rem', 
+                                background: 'white', 
+                                borderRadius: '12px', 
+                                height: '100%',
+                                boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
+                                border: '1px solid rgba(0,0,0,0.05)'
+                            }}>
+                                <h3 className="gold" style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>{item.title}</h3>
+                                <p>{item.desc}</p>
+                            </div>
+                        </Reveal>
+                    ))}
+                </div>
+
+                <div style={{ marginTop: '4rem', textAlign: 'center', maxWidth: '800px', margin: '4rem auto 0' }}>
+                    <Reveal>
+                        <p style={{ fontSize: '1.1rem' }}>
+                            Al Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance, transparency, and client care.
+                        </p>
                     </Reveal>
                 </div>
             </section>
