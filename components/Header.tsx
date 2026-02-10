@@ -25,8 +25,8 @@ export default function Header() {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'Services', href: '/services' },
         { name: 'About', href: '/about' },
+        { name: 'Services', href: '/services' },
         { name: 'Contact', href: '/contact' },
     ];
 
@@ -38,7 +38,7 @@ export default function Header() {
                         src="/logo.png" 
                         alt="Al Aman Trust" 
                         style={{ 
-                            height: isScrolled ? '120px' : '150px', 
+                            height: isScrolled ? '180px' : '200px', 
                             width: 'auto',
                             transition: 'height 0.3s ease'
                         }} 
@@ -51,6 +51,7 @@ export default function Header() {
                             <li key={link.href}>
                                 <Link 
                                     href={link.href} 
+                                    style={{ fontSize: '1.2rem' }}
                                     className={pathname === link.href ? 'active' : ''}
                                 >
                                     {link.name}

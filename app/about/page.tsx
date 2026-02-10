@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <>
-            <section className="section">
+            <section className="section section-tight">
                 <div className="section-header">
                     <Reveal>
                         <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>About Us</span>
-                        <h2 className="serif">Who We <span className="gold">Are</span></h2>
+                        <h2 className="serif">Who We Are</h2>
                     </Reveal>
                 </div>
 
@@ -58,7 +58,7 @@ export default function About() {
                 </div>
             </section>
 
-             <section className="section" style={{ background: 'var(--bg-light)' }}>
+             <section className="section section-tight" style={{ background: 'var(--bg-light)' }}>
                 <div className="grid-2" style={{ alignItems: 'center', gap: '4rem' }}>
                     <Reveal>
                         <div style={{ position: 'relative' }}>
@@ -97,7 +97,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="section">
+            <section className="section section-tight">
                  <div className="section-header">
                     <Reveal>
                         <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>Core Values</span>
@@ -141,8 +141,8 @@ export default function About() {
                  </div>
             </section>
 
-            <section className="section" style={{ background: 'var(--bg-light)' }}>
-                <div className="section-header">
+            <section className="section section-tight" style={{ background: 'var(--bg-light)' }}>
+                <div className="section-header" style={{ maxWidth: '100%' }}>
                     <Reveal>
                         <h2 className="serif">Why Choose <span className="gold">Al Aman Trust Services</span></h2>
                     </Reveal>

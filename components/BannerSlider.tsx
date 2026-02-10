@@ -111,46 +111,55 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                                     flexDirection: 'column',
                                     alignItems: 'center',
                                     justifyContent: 'center',
-                                    textAlign: 'center',
-                                    padding: '0 1rem',
                                     zIndex: 10,
                                 }}
                             >
-                                {slide.subtitle && (
-                                    <p
+                                <div style={{
+                                    width: '100%',
+                                    maxWidth: '1400px',
+                                    padding: '0 5%',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'flex-start',
+                                    textAlign: 'left',
+                                }}>
+                                  
+                                    {slide.title && (
+                                        <h1
+                                            style={{
+                                                color: '#fff',
+                                                fontSize: 'clamp(2.5rem, 6vw, 5rem)',
+                                                fontFamily: 'var(--font-playfair), serif',
+                                                fontWeight: 700,
+                                                lineHeight: 1.1,
+                                                maxWidth: '900px',
+                                                marginBottom: '1.5rem',
+                                            }}
+                                            dangerouslySetInnerHTML={{ __html: slide.title }}
+                                        />
+                                    )}
+                                      {slide.subtitle && (
+                                        <p
+                                            style={{
+                                                color: '#D4AF37',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '0.35em',
+                                                fontSize: 'clamp(0.75rem, 1.5vw, 1rem)',
+                                                marginBottom: '1rem',
+                                                fontWeight: 500,
+                                            }}
+                                        >
+                                            {slide.subtitle}
+                                        </p>
+                                    )}
+                                    <div
                                         style={{
-                                            color: '#D4AF37',
-                                            textTransform: 'uppercase',
-                                            letterSpacing: '0.25em',
-                                            fontSize: 'clamp(0.75rem, 1.5vw, 1rem)',
-                                            marginBottom: '1rem',
-                                            fontWeight: 500,
+                                            width: '80px',
+                                            height: '3px',
+                                            backgroundColor: '#D4AF37',
                                         }}
-                                    >
-                                        {slide.subtitle}
-                                    </p>
-                                )}
-                                {slide.title && (
-                                    <h1
-                                        style={{
-                                            color: '#fff',
-                                            fontSize: 'clamp(2.5rem, 6vw, 5rem)',
-                                            fontFamily: 'var(--font-playfair), serif',
-                                            fontWeight: 700,
-                                            lineHeight: 1.1,
-                                            maxWidth: '900px',
-                                            marginBottom: '1.5rem',
-                                        }}
-                                        dangerouslySetInnerHTML={{ __html: slide.title }}
                                     />
-                                )}
-                                <div
-                                    style={{
-                                        width: '80px',
-                                        height: '3px',
-                                        backgroundColor: '#D4AF37',
-                                    }}
-                                />
+                                </div>
                             </div>
                         </div>
                     </SwiperSlide>

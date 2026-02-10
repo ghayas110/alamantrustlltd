@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="footer-grid">
                 <div>
                     <h3>Al Aman Trust</h3>
-                    <p>Excellence in ethical consulting.</p>
+                    <p>Al Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance, transparency, and client care.</p>
                 </div>
                 <div>
                     <h3>Contact</h3>

@@ -298,6 +298,10 @@ h4,
     padding: 8rem 10%;
 }
 
+.section-tight {
+    padding: 4rem 10%;
+}
+
 .section-header {
     margin-bottom: 4rem;
     max-width: 700px;
@@ -403,12 +407,18 @@ h4,
     padding: 0;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    /* Subtle base shadow */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(197, 164, 115, 0.1);
+    /* Subtle gold border */
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -5px rgba(197, 164, 115, 0.25), 0 10px 20px -5px rgba(197, 164, 115, 0.15);
+    /* Gold theme shadow */
+    border-color: var(--primary-gold);
 }
 
 .card-image {
