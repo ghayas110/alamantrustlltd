@@ -36,7 +36,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             <section
                 style={{
                     position: "relative",
-                    height: "60vh",
+                    height: "70vh",
                     minHeight: "400px",
                     display: "flex",
                     alignItems: "center",
@@ -53,6 +53,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
+                        objectPosition: "center",
                     }}
                 />
                 <div

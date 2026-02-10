@@ -35,12 +35,19 @@ export default function Home() {
             />
 
             <section className="section">
-                <div className="section-header">
-                    <Reveal>
-                        <h2 className="serif">Tailored Solutions for Your <span className="gold">Business & Wealth</span></h2>
-                        <p className="subtitle" style={{ color: '#C5A473', fontWeight: 600, marginBottom: '1rem' }}>Your Trusted Corporate Partner</p>
-                        <p>Al Aman Trust Services specializes in Shariah-compliant corporate services that uphold ethical standards while driving growth. We serve a diverse clientele—from emerging ventures to established enterprises—with tailored expertise in corporate governance, private wealth management, fund services, and strategic market entry across Malaysia, Saudi Arabia, and the UAE. Partner with us to navigate your corporate journey with integrity and precision.</p>
-                    </Reveal>
+                <div className="section-header" style={{ maxWidth: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: '4rem', flexWrap: 'wrap' }}>
+                    <div style={{ flex: '1 1 400px' }}>
+                        <Reveal>
+                            <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700', display: 'block', marginBottom: '1rem' }}>Our Expertise</span>
+                            <h2 className="serif" style={{ margin: 0 }}>Tailored Solutions for Your <span className="gold">Business & Wealth</span></h2>
+                        </Reveal>
+                    </div>
+                    <div style={{ flex: '1 1 400px', paddingBottom: '0.5rem' }}>
+                        <Reveal delay={0.1}>
+                            <p className="subtitle" style={{ color: '#C5A473', fontWeight: 600, marginBottom: '1rem' }}>Your Trusted Corporate Partner</p>
+                            <p>Al Aman Trust Services specializes in Shariah-compliant corporate services that uphold ethical standards while driving growth. We serve a diverse clientele—from emerging ventures to established enterprises—with tailored expertise in corporate governance, private wealth management, fund services, and strategic market entry across Malaysia, Saudi Arabia, and the UAE. Partner with us to navigate your corporate journey with integrity and precision.</p>
+                        </Reveal>
+                    </div>
                 </div>
                 <div className="grid">
                     <Reveal>

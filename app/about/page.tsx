@@ -59,9 +59,34 @@ export default function About() {
             </section>
 
              <section className="section" style={{ background: 'var(--bg-light)' }}>
-                <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                <div className="grid-2" style={{ alignItems: 'center', gap: '4rem' }}>
                     <Reveal>
-                         <h2 className="serif" style={{ marginBottom: '2rem' }}>Our Heritage: <span className="gold">The RUSD Connection</span></h2>
+                        <div style={{ position: 'relative' }}>
+                            <div style={{
+                                position: 'absolute',
+                                top: '20px',
+                                left: '-20px',
+                                width: '100%',
+                                height: '100%',
+                                border: '2px solid var(--primary-gold)',
+                                borderRadius: '20px',
+                                zIndex: 0
+                            }}></div>
+                            <img 
+                                src="/images/rusd-heritage.png" 
+                                alt="The RUSD Connection" 
+                                style={{ 
+                                    width: '100%', 
+                                    borderRadius: '20px', 
+                                    position: 'relative', 
+                                    zIndex: 1,
+                                    boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                                }} 
+                            />
+                        </div>
+                    </Reveal>
+                    <Reveal delay={0.2}>
+                         <h3 className="serif" style={{ marginBottom: '2rem', fontSize: '2rem' }}>Our Heritage: <span className="gold">The RUSD Connection</span></h3>
                          <p style={{ marginBottom: '1.5rem' }}>
                             The RUSD Group, headquartered in Saudi Arabia, has been a pioneer in Shariah-compliant services since 2002. The name "RUSD" reflects a commitment to reviving flexible Islamic economic jurisprudence for the modern era—bridging the gap between tradition and innovation. 
                         </p>
