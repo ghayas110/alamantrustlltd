@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <>
-            <section className="section section-tight">
+            <section className="section-tight">
                 <div className="section-header">
                     <Reveal>
                         <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>About Us</span>
@@ -19,7 +19,7 @@ export default function About() {
 
                 <div className="grid-2" style={{ alignItems: 'start', gap: '4rem' }}>
                     <Reveal>
-                        <h3 className="serif" style={{ fontSize: '1.8rem', marginBottom: '1.5rem' }}>Built on <span className="gold">Trust</span>, Backed by <span className="gold">Strength</span></h3>
+                        <h3 className="serif" style={{ marginBottom: '1.5rem' }}>Built on <span className="gold">Trust</span>, Backed by <span className="gold">Strength</span></h3>
                         <p style={{ marginBottom: '1.5rem' }}>
                             Al Aman Trust Services is a licensed managed trust company dedicated to providing bespoke solutions in today’s evolving business landscape. Based in the premier midshore jurisdiction of Labuan, Malaysia, we are regulated by the Labuan Financial Services Authority (Labuan FSA).
                         </p>
@@ -58,7 +58,7 @@ export default function About() {
                 </div>
             </section>
 
-             <section className="section section-tight" style={{ background: 'var(--bg-light)' }}>
+             <section className="section-tight" style={{ background: 'var(--bg-light)' }}>
                 <div className="grid-2" style={{ alignItems: 'center', gap: '4rem' }}>
                     <Reveal>
                         <div style={{ position: 'relative' }}>
@@ -86,7 +86,7 @@ export default function About() {
                         </div>
                     </Reveal>
                     <Reveal delay={0.2}>
-                         <h3 className="serif" style={{ marginBottom: '2rem', fontSize: '2rem' }}>Our Heritage: <span className="gold">The RUSD Connection</span></h3>
+                         <h3 className="serif" style={{ marginBottom: '2rem' }}>Our Heritage: <span className="gold">The RUSD Connection</span></h3>
                          <p style={{ marginBottom: '1.5rem' }}>
                             The RUSD Group, headquartered in Saudi Arabia, has been a pioneer in Shariah-compliant services since 2002. The name "RUSD" reflects a commitment to reviving flexible Islamic economic jurisprudence for the modern era—bridging the gap between tradition and innovation. 
                         </p>
@@ -97,7 +97,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="section section-tight">
+            <section className="section-tight">
                  <div className="section-header">
                     <Reveal>
                         <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>Core Values</span>
@@ -136,12 +136,12 @@ export default function About() {
                 </div>
                  <div style={{ marginTop: '3rem', textAlign: 'center' }}>
                      <Reveal>
-                        <p className="gold" style={{ fontSize: '1.2rem', fontStyle: 'italic' }}>"These principles guide our day-to-day operations and ensure that trust remains at the heart of everything we do."</p>
+                        <p className="gold" style={{ fontStyle: 'italic', fontSize: '1.25rem' }}>"These principles guide our day-to-day operations and ensure that trust remains at the heart of everything we do."</p>
                     </Reveal>
                  </div>
             </section>
 
-            <section className="section section-tight" style={{ background: 'var(--bg-light)' }}>
+            <section className="section-tight" style={{ background: 'var(--bg-light)' }}>
                 <div className="section-header" style={{ maxWidth: '100%' }}>
                     <Reveal>
                         <h2 className="serif">Why Choose <span className="gold">Al Aman Trust Services</span></h2>
@@ -166,7 +166,7 @@ export default function About() {
                                 boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
                                 border: '1px solid rgba(0,0,0,0.05)'
                             }}>
-                                <h3 className="gold" style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>{item.title}</h3>
+                                <h3 className="gold" style={{ marginBottom: '1rem' }}>{item.title}</h3>
                                 <p>{item.desc}</p>
                             </div>
                         </Reveal>

@@ -91,7 +91,7 @@ export default function Services() {
                                 <div style={{ position: "absolute", bottom: "-20px", right: "-20px", width: "100px", height: "100px", borderBottom: "2px solid #D4AF37", borderRight: "2px solid #D4AF37", zIndex: -1 }}></div>
                             </div>
                             <div>
-                                <h2 className="serif" style={{ marginBottom: "1.5rem", fontSize: "2.5rem" }}>
+                                <h2 className="serif" style={{ marginBottom: "1.5rem" }}>
                                     Our <span className="gold">Solutions</span>
                                 </h2>
                                 <div style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
@@ -116,8 +116,8 @@ export default function Services() {
                         <Link href={`/services/${service.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                             <div className={`service-row ${index % 2 !== 0 ? 'reverse' : ''}`}>
                                 <div className="service-content">
-                                    <h3 className="serif gold" style={{ fontSize: '2rem' }}>{service.headline}</h3>
-                                    <p className="subtitle" style={{ fontSize: '1.1rem', marginBottom: '1rem', fontWeight: 600, color: 'var(--text-body)' }}>
+                                    <h3 className="serif gold">{service.headline}</h3>
+                                    <p className="subtitle" style={{ marginBottom: '1rem', fontWeight: 600, color: 'var(--text-body)' }}>
                                         {service.subHeadline}
                                     </p>
                                     <p style={{ marginBottom: '1.5rem' }}>{service.shortDescription}</p>

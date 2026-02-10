@@ -11,6 +11,24 @@
     --sidebar-bg: #FFFFFF;
     --transition-speed: 0.3s;
     --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    /* Typography Scale */
+    --h1-size: clamp(2.5rem, 5vw, 4.5rem);
+    --h2-size: clamp(2rem, 4vw, 3.5rem);
+    --h3-size: clamp(1.5rem, 3vw, 2rem);
+    --p-size: 1rem;
+    --p-lg-size: 1.125rem;
+
+    /* Spacing */
+    --section-padding: 6rem 10%;
+    --section-tight-padding: 4rem 10%;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-padding: 4rem 5%;
+        --section-tight-padding: 3rem 5%;
+    }
 }
 
 * {
@@ -25,6 +43,7 @@ body {
     background-color: var(--bg-light);
     line-height: 1.6;
     overflow-x: hidden;
+    font-size: var(--p-size);
 }
 
 h1,
@@ -34,6 +53,19 @@ h4,
 .serif {
     font-family: var(--font-montserrat), sans-serif;
     font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
 }
 
 .gold {
@@ -281,7 +313,7 @@ h4,
 }
 
 .hero-content h1 {
-    font-size: 4.5rem;
+    font-size: var(--h1-size);
     margin-bottom: 1rem;
     line-height: 1.1;
 }
@@ -295,20 +327,20 @@ h4,
 
 /* Sections */
 .section {
-    padding: 8rem 10%;
+    padding: var(--section-padding);
 }
 
 .section-tight {
-    padding: 4rem 10%;
+    padding: var(--section-tight-padding);
 }
 
 .section-header {
-    margin-bottom: 4rem;
-    max-width: 700px;
+    margin-bottom: 3rem;
+    max-width: 800px;
 }
 
 .section-header h2 {
-    font-size: 3rem;
+    font-size: var(--h2-size);
     margin-bottom: 1rem;
     line-height: 1.2;
 }
@@ -563,7 +595,7 @@ h4,
 .services-vertical {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .service-row {
