@@ -217,7 +217,7 @@ export const services: Service[] = [
             'Proven Track Record – Successful launches across multiple sectors',
         ],
         ctaText: 'Explore Soft-Landing Services →',
-        image: '/images/business-soft-landing.png',
+        image: '/images/business-soft-landing-home.png',
     },
 ];
 

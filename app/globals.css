@@ -32,7 +32,7 @@ h2,
 h3,
 h4,
 .serif {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-montserrat), sans-serif;
     font-weight: 700;
 }
 
@@ -560,18 +560,16 @@ h4,
     display: flex;
     align-items: center;
     gap: 4rem;
-    background: white;
-    padding: 4rem;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+    /* Removed boxed layout styles */
+    /* background: white; */
+    /* padding: 4rem; */
+    /* border-radius: 20px; */
+    /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03); */
     transition: all 0.5s ease;
     overflow: hidden;
 }
 
-.service-row:hover {
-    transform: scale(1.02);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.06);
-}
+
 
 .service-row.reverse {
     flex-direction: row-reverse;

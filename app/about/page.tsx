@@ -43,7 +43,7 @@ export default function About() {
                                 zIndex: 0
                             }}></div>
                             <img 
-                                src="/images/hero.png" 
+                                src="/images/business-soft-landing-home.png" 
                                 alt="Al Aman Trust" 
                                 style={{ 
                                     width: '100%', 

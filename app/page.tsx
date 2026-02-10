@@ -7,12 +7,7 @@ export default function Home() {
         <>
             <BannerSlider 
                 slides={[
-                    {
-                        type: 'image',
-                        src: '/images/banner1.png',
-                        title: 'Tailored Strategies That Reflect Your <span class="gold">Vision</span>',
-                        subtitle: 'Your trusted corporate partner'
-                    },
+              
                     {
                         type: 'image',
                         src: '/images/banner2.png',
@@ -54,7 +49,7 @@ export default function Home() {
                         <Link href="/services/corporate-solutions" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <img src="/images/service-1.png" alt="Corporate Services" className="card-image" />
                             <div className="card-body">
-                                <h3>Corporate Services</h3>
+                                <h3 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', fontSize: '1.25rem', color: '#C5A473' }}>Corporate Services</h3>
                                 <p>Tailored Strategies That Reflect Your Vision. Your trusted corporate partner.</p>
                             </div>
                         </Link>
@@ -63,7 +58,7 @@ export default function Home() {
                         <Link href="/services/private-client-advisory" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <img src="/images/service-3.png" alt="Private Client Services" className="card-image" />
                             <div className="card-body">
-                                <h3>Private Client Services</h3>
+                                <h3 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', fontSize: '1.25rem', color: '#C5A473' }}>Private Client Services</h3>
                                 <p>Your Values, Our Commitment, Lasting Trust. Wealth solutions in line with your faith and ethics.</p>
                             </div>
                         </Link>
@@ -72,16 +67,16 @@ export default function Home() {
                         <Link href="/services/fund-services" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <img src="/images/service-2.png" alt="Fund Services" className="card-image" />
                             <div className="card-body">
-                                <h3>Fund Services</h3>
+                                <h3 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', fontSize: '1.25rem', color: '#C5A473' }}>Fund Services</h3>
                                 <p>Where Compliance Meets Operational Excellence. We Handle Operations. You Drive Returns.</p>
                             </div>
                         </Link>
                     </Reveal>
                     <Reveal delay={0.3}>
                         <Link href="/services/business-soft-landing" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <img src="/images/hero.png" alt="Business Soft-landing" className="card-image" />
+                            <img src="/images/business-soft-landing-home.png" alt="Business Soft-landing" className="card-image" />
                             <div className="card-body">
-                                <h3>Business Soft-landing</h3>
+                                <h3 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', fontSize: '1.25rem', color: '#C5A473' }}>Business Soft-Landing</h3>
                                 <p>Your Bridge to the Gulf & ASEAN. We Handle Entry. You Focus on Growth.</p>
                             </div>
                         </Link>

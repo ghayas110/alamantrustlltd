@@ -66,7 +66,10 @@ export default function Services() {
                             <span className="gold">Strategies That Secure Your Future</span>
                         </h1>
                         <div style={{ width: "80px", height: "3px", backgroundColor: "#D4AF37", margin: "0 auto 1.5rem auto" }} />
-                        <p className="text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed text-gray-200">
+                        <p 
+                            className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
+                            style={{ color: '#fff', fontWeight: 500, textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
+                        >
                             Bespoke, Shariah-compliant services designed to bridge tradition and innovation
                         </p>
                     </Reveal>
@@ -126,9 +129,13 @@ export default function Services() {
                                         {service.ctaText}
                                     </span>
                                 </div>
-                                <div className="service-image-container">
-                                    <img src={service.image} alt={service.title} className="service-img" />
-                                    <div className="img-overlay"></div>
+                                <div className="service-image-container" style={{ overflow: 'visible' }}>
+                                    <div style={{ position: "relative", height: "100%", width: "100%" }}>
+                                        <img src={service.image} alt={service.title} className="service-img" style={{ borderRadius: "12px", objectFit: "cover", width: "100%", height: "100%" }} />
+                                        <div className="img-overlay" style={{ borderRadius: "12px" }}></div>
+                                        <div style={{ position: "absolute", top: "-20px", left: "-20px", width: "100px", height: "100px", borderTop: "2px solid #D4AF37", borderLeft: "2px solid #D4AF37", zIndex: -1 }}></div>
+                                        <div style={{ position: "absolute", bottom: "-20px", right: "-20px", width: "100px", height: "100px", borderBottom: "2px solid #D4AF37", borderRight: "2px solid #D4AF37", zIndex: -1 }}></div>
+                                    </div>
                                 </div>
                             </div>
                         </Link>

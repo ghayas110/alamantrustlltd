@@ -34,7 +34,15 @@ export default function Header() {
         <header className={`top-header ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
             <div className="header-container">
                 <Link href="/" className="logo">
-                    <span className="gold">AL AMAN</span> TRUST
+                   <img 
+                        src="/logo.png" 
+                        alt="Al Aman Trust" 
+                        style={{ 
+                            height: isScrolled ? '120px' : '150px', 
+                            width: 'auto',
+                            transition: 'height 0.3s ease'
+                        }} 
+                    />
                 </Link>
                 
                 <nav className={`desktop-nav ${isMenuOpen ? 'open' : ''}`}>

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import NavigationWrapper from "@/components/NavigationWrapper";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({
+const montserrat = Montserrat({
     subsets: ["latin"],
-    variable: "--font-playfair",
+    variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={`${inter.variable} ${playfair.variable}`}>
+            <body className={`${inter.variable} ${montserrat.variable}`}>
                 <div className="app-container">
                     <NavigationWrapper />
                     <main className="main-content">
