@@ -600,21 +600,7 @@ h4,
     margin-bottom: 2rem;
 }
 
-.service-list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
 
-.service-list li::before {
-    content: "•";
-    color: var(--primary-gold);
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
 
 .service-image-container {
     flex: 1;

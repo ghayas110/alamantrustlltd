@@ -2,6 +2,7 @@ import Reveal from "@/components/Reveal";
 import Link from "next/link";
 import { services } from "@/data/services";
 import type { Metadata } from "next";
+import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
     title: 'Services | Al Aman Trust',
@@ -120,11 +121,40 @@ export default function Services() {
                                         {service.subHeadline}
                                     </p>
                                     <p style={{ marginBottom: '1.5rem' }}>{service.shortDescription}</p>
-                                    <ul className="service-list">
+                                    
+                                    <div style={{ 
+                                        display: 'grid', 
+                                        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+                                        gap: '1rem', 
+                                        marginTop: '1.5rem',
+                                        marginBottom: '1.5rem'
+                                    }}>
                                         {service.features.map((feature, idx) => (
-                                            <li key={idx}>{feature}</li>
+                                            <div key={idx} style={{ 
+                                                display: 'flex', 
+                                                alignItems: 'center', 
+                                                gap: '0.75rem', 
+                                                padding: '1rem', 
+                                                background: 'rgba(212, 175, 55, 0.05)', 
+                                                border: '1px solid rgba(212, 175, 55, 0.2)', 
+                                                borderRadius: '8px',
+                                                transition: 'transform 0.2s ease, background 0.2s ease'
+                                            }} className="feature-card">
+                                                <div style={{ 
+                                                    background: 'rgba(212, 175, 55, 0.1)', 
+                                                    padding: '6px', 
+                                                    borderRadius: '50%',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center'
+                                                }}>
+                                                    <Check color="#D4AF37" size={16} strokeWidth={3} />
+                                                </div>
+                                                <span style={{ fontWeight: 500, fontSize: '0.95rem' }}>{feature}</span>
+                                            </div>
                                         ))}
-                                    </ul>
+                                    </div>
+
                                     <span style={{ color: 'var(--primary-gold)', fontWeight: 600, marginTop: '2rem', display: 'inline-block', borderBottom: '1px solid transparent', transition: 'border-color 0.3s' }} className="hover-underline">
                                         {service.ctaText}
                                     </span>
