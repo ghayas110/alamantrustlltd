@@ -1,0 +1,756 @@
+/* Scoped variables */
+.servicePage {
+    --navy: #0F1419;
+    --navy-light: #1C2530;
+    --gold: #C9A961;
+    --gold-light: #E4D4A8;
+    --cream: #F9F7F4;
+    --text: #2D3540;
+    --text-light: #6B7280;
+    --border: #E5E7EB;
+
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.servicePage * {
+    box-sizing: border-box;
+}
+
+/* Navigation - Skipped as we use global nav */
+
+/* Page Hero - Minimalist with Large Number */
+.pageHero {
+    background: white;
+    padding: 100px 60px 80px;
+    border-bottom: 1px solid var(--border);
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.breadcrumb a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--gold);
+}
+
+.breadcrumbSeparator {
+    color: var(--border);
+}
+
+.heroContent {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.heroNumber {
+    font-family: 'Playfair Display', serif;
+    font-size: 10rem;
+    font-weight: 900;
+    color: rgba(201, 169, 97, 0.15);
+    line-height: 0.8;
+}
+
+.heroText {
+    padding-top: 20px;
+}
+
+.serviceCategory {
+    font-size: 0.75rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.pageTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.pageSubtitle {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* Overview Section */
+.overview {
+    padding: 80px 60px;
+    background: var(--cream);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.overviewGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.overviewText {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text);
+    font-weight: 300;
+}
+
+.overviewStats {
+    background: white;
+    padding: 48px;
+    border: 1px solid var(--border);
+}
+
+.statTitle {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+.statGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.statItem {
+    border-left: 2px solid var(--gold);
+    padding-left: 16px;
+}
+
+.statNumber {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.statLabel {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+
+/* Markets Section */
+.marketsSection {
+    padding: 80px 60px;
+    background: var(--cream);
+}
+
+.marketsIntro {
+    margin-bottom: 60px;
+}
+
+.marketsIntro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 24px;
+}
+
+.marketsIntro p {
+    font-size: 1.125rem;
+    color: var(--text);
+    font-weight: 300;
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+.marketsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.marketCard {
+    background: white;
+    padding: 48px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.marketCard:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.marketFlag {
+    font-size: 3rem;
+    margin-bottom: 24px;
+}
+
+.marketName {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.marketDescription {
+    font-size: 0.938rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* Services List - Clean Modern Style */
+.servicesSection {
+    padding: 80px 60px;
+    background: white;
+}
+
+.sectionHeader {
+    max-width: 1400px;
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+}
+
+.sectionTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.sectionCount {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 300;
+}
+
+/* Individual Service Blocks - Numbered List Style */
+.serviceList {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.serviceItem {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 60px;
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border);
+    transition: all 0.4s ease;
+}
+
+.serviceItem:hover {
+    background: var(--cream);
+    margin: 0 -60px;
+    padding: 60px 60px;
+}
+
+.serviceIndex {
+    text-align: right;
+}
+
+.indexNumber {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.indexTotal {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.serviceContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.serviceMain h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.serviceDescription {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--text);
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+.serviceLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+
+.serviceLink:hover {
+    color: var(--gold);
+    gap: 12px;
+}
+
+.serviceFeatures {
+    list-style: none;
+}
+
+.serviceFeatures li {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.938rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.serviceFeatures li:last-child {
+    border-bottom: none;
+}
+
+.serviceFeatures li::before {
+    content: '→';
+    color: var(--gold);
+    font-weight: 600;
+}
+
+/* Process Timeline */
+.processSection {
+    padding: 100px 60px;
+    background: var(--navy);
+    color: white;
+}
+
+.processContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.processHeader {
+    margin-bottom: 80px;
+}
+
+.processHeader h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.processHeader p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    max-width: 600px;
+}
+
+.processTimeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.timelineStep {
+    position: relative;
+    padding-top: 60px;
+}
+
+.timelineStep::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(201, 169, 97, 0.2);
+}
+
+.timelineStep:last-child::before {
+    display: none;
+}
+
+.stepNumber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--gold);
+    color: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stepTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.stepDescription {
+    font-size: 0.938rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+/* Why Choose Section */
+.whyChoose {
+    padding: 100px 60px;
+    background: white;
+}
+
+.whyGrid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.whyContent h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 32px;
+}
+
+.whyText {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.benefitsList {
+    list-style: none;
+}
+
+.benefitItem {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.benefitItem:last-child {
+    border-bottom: none;
+}
+
+.benefitTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.benefitDescription {
+    font-size: 0.938rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.ctaSection {
+    padding: 100px 60px;
+    background: var(--cream);
+    border-top: 1px solid var(--border);
+}
+
+.ctaContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ctaTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 24px;
+}
+
+.ctaText {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 48px;
+    font-weight: 300;
+}
+
+.ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.btnPrimary {
+    padding: 18px 48px;
+    background: var(--navy);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    border: 2px solid var(--navy);
+    text-transform: uppercase;
+    font-size: 0.938rem;
+}
+
+.btnPrimary:hover {
+    background: transparent;
+    color: var(--navy);
+}
+
+.btnSecondary {
+    padding: 18px 48px;
+    background: transparent;
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    border: 2px solid var(--navy);
+    text-transform: uppercase;
+    font-size: 0.938rem;
+}
+
+.btnSecondary:hover {
+    background: var(--navy);
+    color: white;
+}
+
+.contactInfo {
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.contactItem {
+    text-align: center;
+}
+
+.contactLabel {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+}
+
+.contactValue {
+    font-size: 1rem;
+    color: var(--navy);
+    font-weight: 500;
+}
+
+/* Responsive */
+/* Responsive */
+@media (max-width: 1024px) {
+    .pageHero {
+        padding: 60px 24px;
+    }
+
+    .heroContent {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .heroNumber {
+        font-size: 6rem;
+    }
+
+    .pageTitle {
+        font-size: 2.5rem;
+    }
+
+    .pageSubtitle {
+        font-size: 1.125rem;
+    }
+
+    .overview {
+        padding: 60px 24px;
+    }
+
+    .overviewGrid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .overviewStats {
+        padding: 32px;
+    }
+
+    .servicesSection {
+        padding: 60px 24px;
+    }
+
+    .sectionHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .serviceItem {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 40px 0;
+    }
+
+    .serviceItem:hover {
+        margin: 0 -24px;
+        padding: 40px 24px;
+    }
+
+    .serviceIndex {
+        text-align: left;
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+    }
+
+    .indexNumber {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .serviceContent {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .processSection {
+        padding: 60px 24px;
+    }
+
+    .processHeader h2 {
+        font-size: 2.5rem;
+    }
+
+    .processTimeline {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .timelineStep {
+        padding-top: 0;
+        padding-left: 80px;
+    }
+
+    .timelineStep::before {
+        display: none;
+    }
+
+    .stepNumber {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    .whyChoose {
+        padding: 60px 24px;
+    }
+
+    .whyGrid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .whyContent h2 {
+        font-size: 2.5rem;
+    }
+
+    .ctaSection {
+        padding: 80px 24px;
+    }
+
+    .ctaTitle {
+        font-size: 2rem;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btnPrimary,
+    .btnSecondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactInfo {
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 40px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .marketsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .statGrid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -157,7 +157,7 @@ export const services: Service[] = [
         image: '/images/service-2.png',
     },
     {
-        slug: 'business-support-soft-landing',
+        slug: 'business-soft-landing',
         title: 'Business Support & Soft-Landing Services',
         subtitle: 'Your Strategic Partner for Market Entry and Expansion',
         headline: 'Seamless Market Entry',

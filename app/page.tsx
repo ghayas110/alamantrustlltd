@@ -44,44 +44,99 @@ export default function Home() {
                         </Reveal>
                     </div>
                 </div>
-                <div className="grid">
-                    <Reveal>
-                        <Link href="/services/corporate-solutions" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <img src="/images/service-1.png" alt="Corporate Services" className="card-image" />
-                            <div className="card-body">
-                                <h3 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', color: '#C5A473' }}>Corporate Services</h3>
-                                <p>Tailored Strategies That Reflect Your Vision. Your trusted corporate partner.</p>
-                            </div>
-                        </Link>
-                    </Reveal>
-                    <Reveal delay={0.1}>
-                        <Link href="/services/private-client-advisory" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <img src="/images/service-3.png" alt="Private Client Services" className="card-image" />
-                            <div className="card-body">
-                                <h3 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', color: '#C5A473' }}>Private Client Services</h3>
-                                <p>Your Values, Our Commitment, Lasting Trust. Wealth solutions in line with your faith and ethics.</p>
-                            </div>
-                        </Link>
-                    </Reveal>
-                    <Reveal delay={0.2}>
-                        <Link href="/services/fund-services" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <img src="/images/service-2.png" alt="Fund Services" className="card-image" />
-                            <div className="card-body">
-                                <h3 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', color: '#C5A473' }}>Fund Services</h3>
-                                <p>Where Compliance Meets Operational Excellence. We Handle Operations. You Drive Returns.</p>
-                            </div>
-                        </Link>
-                    </Reveal>
-                    <Reveal delay={0.3}>
-                        <Link href="/services/business-soft-landing" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <img src="/images/business-soft-landing-home.png" alt="Business Soft-landing" className="card-image" />
-                            <div className="card-body">
-                                <h3 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', color: '#C5A473' }}>Business Soft-Landing</h3>
-                                <p>Your Bridge to the Gulf & ASEAN. We Handle Entry. You Focus on Growth.</p>
-                            </div>
-                        </Link>
-                    </Reveal>
-                </div>
+         <div className="grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
+    <Reveal>
+        <Link 
+            href="/services/corporate-solutions" 
+            className="card" 
+            style={{ 
+                textDecoration: 'none', 
+                color: 'inherit',
+                display: 'block',
+                border: '1px solid #C5A473', // Theme-aligned border
+                borderRadius: '8px',
+                overflow: 'hidden',
+                backgroundColor: 'rgba(197, 164, 115, 0.05)', // Very subtle theme tint
+                transition: 'transform 0.3s ease'
+            }}
+        >
+            <img src="/images/service-1.png" alt="Corporate Services" className="card-image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <div className="card-body" style={{ padding: '20px' }}>
+                <h3 style={{ color: '#C5A473', marginTop: '0' }}>Corporate Services</h3>
+                <p>Tailored Strategies That Reflect Your Vision. Your trusted corporate partner.</p>
+            </div>
+        </Link>
+    </Reveal>
+
+    <Reveal delay={0.1}>
+        <Link 
+            href="/services/private-client-advisory" 
+            className="card" 
+            style={{ 
+                textDecoration: 'none', 
+                color: 'inherit',
+                display: 'block',
+                border: '1px solid #C5A473',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                backgroundColor: 'rgba(197, 164, 115, 0.05)',
+                transition: 'transform 0.3s ease'
+            }}
+        >
+            <img src="/images/service-3.png" alt="Private Client Services" className="card-image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <div className="card-body" style={{ padding: '20px' }}>
+                <h3 style={{ color: '#C5A473', marginTop: '0' }}>Private Client Services</h3>
+                <p> Wealth solutions in line with your faith and ethics.</p>
+            </div>
+        </Link>
+    </Reveal>
+
+    <Reveal delay={0.2}>
+        <Link 
+            href="/services/fund-services" 
+            className="card" 
+            style={{ 
+                textDecoration: 'none', 
+                color: 'inherit',
+                display: 'block',
+                border: '1px solid #C5A473',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                backgroundColor: 'rgba(197, 164, 115, 0.05)',
+                transition: 'transform 0.3s ease'
+            }}
+        >
+            <img src="/images/service-2.png" alt="Fund Services" className="card-image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <div className="card-body" style={{ padding: '20px' }}>
+                <h3 style={{ color: '#C5A473', marginTop: '0' }}>Fund Services</h3>
+                <p>Where Compliance Meets Operational Excellence. We Handle Operations. You Drive Returns.</p>
+            </div>
+        </Link>
+    </Reveal>
+
+    <Reveal delay={0.3}>
+        <Link 
+            href="/services/business-soft-landing" 
+            className="card" 
+            style={{ 
+                textDecoration: 'none', 
+                color: 'inherit',
+                display: 'block',
+                border: '1px solid #C5A473',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                backgroundColor: 'rgba(197, 164, 115, 0.05)',
+                transition: 'transform 0.3s ease'
+            }}
+        >
+            <img src="/images/business-soft-landing-home.png" alt="Business Soft-landing" className="card-image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            <div className="card-body" style={{ padding: '20px' }}>
+                <h3 style={{ color: '#C5A473', marginTop: '0' }}>Business Support & Soft-Landing</h3>
+                <p>Your Bridge to the Gulf & ASEAN. We Handle Entry. You Focus on Growth.</p>
+            </div>
+        </Link>
+    </Reveal>
+</div>
             </section>
 
             {/* <section className="section dark-section">
