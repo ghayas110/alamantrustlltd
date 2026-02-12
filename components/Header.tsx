@@ -38,7 +38,7 @@ export default function Header() {
                         src="/logo.png" 
                         alt="Al Aman Trust" 
                         style={{ 
-                            height: isScrolled ? '180px' : '200px', 
+                            height: isScrolled ? '120px' : '150px', 
                             width: 'auto',
                             transition: 'height 0.3s ease'
                         }} 
