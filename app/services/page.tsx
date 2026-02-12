@@ -1,8 +1,6 @@
 import Reveal from "@/components/Reveal";
-import Link from "next/link";
-import { services } from "@/data/services";
 import type { Metadata } from "next";
-import { Check } from "lucide-react";
+import styles from "./services.module.css";
 
 export const metadata: Metadata = {
     title: 'Services | Al Aman Trust',
@@ -10,169 +8,132 @@ export const metadata: Metadata = {
 
 export default function Services() {
     return (
-        <>
-            <section
-                style={{
-                    display: "grid",
-                    placeItems: "center",
-                    minHeight: "400px",
-                    position: "relative",
-                    marginBottom: "4rem"
-                }}
-            >
-                <img
-                    src="/images/services-hero-new.png"
-                    alt="Our Services"
-                    style={{
-                        gridArea: "1 / 1",
-                        width: "100%",
-                        height: "auto",
-                        maxHeight: "80vh",
-                        objectFit: "cover",
-                        zIndex: 0,
-                    }}
-                />
-                <div
-                    style={{
-                        gridArea: "1 / 1",
-                        width: "100%",
-                        height: "100%",
-                        background: "linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8))",
-                        zIndex: 1,
-                    }}
-                />
-                <div style={{ gridArea: "1 / 1", zIndex: 10, textAlign: "center", padding: "0 1rem" }}>
+        <div className={styles.pageContainer}>
+            {/* Hero Section */}
+            <section className={styles.hero}>
+                <div className={styles.heroLeft}>
                     <Reveal>
-                        <p
-                            style={{
-                                color: "#D4AF37",
-                                textTransform: "uppercase",
-                                letterSpacing: "0.2em",
-                                fontSize: "0.875rem",
-                                marginBottom: "1rem",
-                            }}
-                        >
-                            Our Services
+                        <div className={styles.heroNumber}>01</div>
+                        <h1 className={styles.heroTitle}>Solutions That Honor Values</h1>
+                        <p className={styles.heroSubtitle}>SHARIAH-COMPLIANT EXCELLENCE</p>
+                    </Reveal>
+                </div>
+                <div className={styles.heroRight}>
+                    <Reveal>
+                        <p className={styles.heroIntro}>
+                            Bespoke strategies that reflect your values and long-term vision, grounded in Shariah compliance and regulatory excellence.
                         </p>
-                        <h1
-                            className="serif"
-                            style={{
-                                color: "#fff",
-                                fontSize: "clamp(2.5rem, 5vw, 4rem)",
-                                marginBottom: "1rem",
-                                lineHeight: "1.2"
-                            }}
-                        >
-                            Solutions That Honor Your Values,<br />
-                            <span className="gold">Strategies That Secure Your Future</span>
-                        </h1>
-                        <div style={{ width: "80px", height: "3px", backgroundColor: "#D4AF37", margin: "0 auto 1.5rem auto" }} />
-                        <p 
-                            className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
-                            style={{ color: '#fff', fontWeight: 500, textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
-                        >
-                            Bespoke, Shariah-compliant services designed to bridge tradition and innovation
-                        </p>
+                        <div className={styles.statsGrid}>
+                            <div className={styles.stat}>
+                                <div className={styles.statNumber}>15+</div>
+                                <div className={styles.statLabel}>Years Experience</div>
+                            </div>
+                            <div className={styles.stat}>
+                                <div className={styles.statNumber}>500+</div>
+                                <div className={styles.statLabel}>Clients Served</div>
+                            </div>
+                            <div className={styles.stat}>
+                                <div className={styles.statNumber}>3</div>
+                                <div className={styles.statLabel}>Key Markets</div>
+                            </div>
+                            <div className={styles.stat}>
+                                <div className={styles.statNumber}>100%</div>
+                                <div className={styles.statLabel}>Compliance Rate</div>
+                            </div>
+                        </div>
+                        <a href="#services" className={styles.heroCta}>EXPLORE SERVICES</a>
                     </Reveal>
                 </div>
             </section>
 
-            <section className="section">
-                <div style={{ marginBottom: "6rem" }}>
+            {/* Services Section */}
+            <section className={styles.servicesSection} id="services">
+                <div className={styles.sectionHeader}>
                     <Reveal>
-                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "4rem", alignItems: "center" }}>
-                            <div style={{ position: "relative", minHeight: "300px" }}>
-                                <img
-                                    src="/images/our-solutions-services.png"
-                                    alt="Our Solutions"
-                                    style={{ width: "100%", borderRadius: "8px", boxShadow: "0 10px 30px rgba(0,0,0,0.3)" }}
-                                />
-                                <div style={{ position: "absolute", top: "-20px", left: "-20px", width: "100px", height: "100px", borderTop: "2px solid #D4AF37", borderLeft: "2px solid #D4AF37", zIndex: -1 }}></div>
-                                <div style={{ position: "absolute", bottom: "-20px", right: "-20px", width: "100px", height: "100px", borderBottom: "2px solid #D4AF37", borderRight: "2px solid #D4AF37", zIndex: -1 }}></div>
-                            </div>
-                            <div>
-                                <h2 className="serif" style={{ marginBottom: "1.5rem" }}>
-                                    Our <span className="gold">Solutions</span>
-                                </h2>
-                                <div style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
-                                    <p style={{ marginBottom: "1.5rem" }}>
-                                        Your business ambitions deserve more than standard solutions. At Al Aman Trust Services, we deliver bespoke strategies that reflect your values and long-term vision, all grounded in Shariah compliance and regulatory excellence.
-                                    </p>
-                                    <p style={{ marginBottom: "1.5rem" }}>
-                                        From corporate structuring to wealth preservation, from fund administration to seamless market entry—we provide the expertise, infrastructure, and strategic support you need to thrive in today's dynamic global markets.
-                                    </p>
-                                    <p style={{ fontWeight: 600 }}>
-                                        Explore our comprehensive suite of services designed for discerning clients and forward-thinking businesses.
-                                    </p>
-                                </div>
-                            </div>
+                        <div className={styles.sectionLabel}>OUR SOLUTIONS</div>
+                        <h2 className={styles.sectionTitle}>Comprehensive Services for Modern Businesses</h2>
+                    </Reveal>
+                </div>
+                
+                <div className={styles.servicesScroll}>
+                    <Reveal>
+                        <div className={styles.serviceCardAlt}>
+                            <div className={styles.serviceNumberSmall}>01 / CORPORATE</div>
+                            <h3 className={styles.serviceTitleAlt}>Corporate Services</h3>
+                            <p className={styles.serviceDescAlt}>
+                                Comprehensive management of your business lifecycle, from tax efficiency to stringent regulatory compliance.
+                            </p>
+                            <ul className={styles.serviceList}>
+                                <li>Business Setup & Soft-Landing</li>
+                                <li>Accounting & Tax Services</li>
+                                <li>Compliance & Substance</li>
+                                <li>Corporate Secretarial</li>
+                            </ul>
+                            <a href="/services/corporate-services" className={styles.serviceLink}>Learn More →</a>
+                        </div>
+                    </Reveal>
+
+                    <Reveal>
+                        <div className={styles.serviceCardAlt}>
+                            <div className={styles.serviceNumberSmall}>02 / PRIVATE WEALTH</div>
+                            <h3 className={styles.serviceTitleAlt}>Private Client Services</h3>
+                            <p className={styles.serviceDescAlt}>
+                                Sophisticated wealth structuring for individuals and families within Shariah-compliant frameworks.
+                            </p>
+                            <ul className={styles.serviceList}>
+                                <li>Wealth Planning & Strategy</li>
+                                <li>Trust & Foundation Management</li>
+                                <li>Private Funds Setup</li>
+                                <li>Multi-Family Office</li>
+                            </ul>
+                            <a href="/services/private-client-services" className={styles.serviceLink}>Learn More →</a>
+                        </div>
+                    </Reveal>
+
+                    <Reveal>
+                        <div className={styles.serviceCardAlt}>
+                            <div className={styles.serviceNumberSmall}>03 / FUNDS</div>
+                            <h3 className={styles.serviceTitleAlt}>Fund Services</h3>
+                            <p className={styles.serviceDescAlt}>
+                                Launch and manage investment vehicles with precision and regulatory knowledge.
+                            </p>
+                            <ul className={styles.serviceList}>
+                                <li>Private & Public Fund Setup</li>
+                                <li>Fund Administration</li>
+                                <li>Client Onboarding & Compliance</li>
+                                <li>Company Secretary for Funds</li>
+                            </ul>
+                            <a href="/services/fund-services" className={styles.serviceLink}>Learn More →</a>
+                        </div>
+                    </Reveal>
+
+                    <Reveal>
+                        <div className={styles.serviceCardAlt}>
+                            <div className={styles.serviceNumberSmall}>04 / EXPANSION</div>
+                            <h3 className={styles.serviceTitleAlt}>Soft-Landing Services</h3>
+                            <p className={styles.serviceDescAlt}>
+                                Transform market entry ambitions into operational realities across high-growth markets.
+                            </p>
+                            <ul className={styles.serviceList}>
+                                <li>Market Entry Strategy</li>
+                                <li>Setup & Licensing</li>
+                                <li>Business Localization</li>
+                                <li>Regulatory Navigation</li>
+                            </ul>
+                            <a href="/services/business-support-soft-landing" className={styles.serviceLink}>Learn More →</a>
                         </div>
                     </Reveal>
                 </div>
-
-            <div className="services-vertical">
-                {services.map((service, index) => (
-                    <Reveal key={service.slug}>
-                        <Link href={`/services/${service.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <div className={`service-row ${index % 2 !== 0 ? 'reverse' : ''}`}>
-                                <div className="service-content">
-                                    <h3 className="serif gold">{service.headline}</h3>
-                                    <p className="subtitle" style={{ marginBottom: '1rem', fontWeight: 600, color: 'var(--text-body)' }}>
-                                        {service.subHeadline}
-                                    </p>
-                                    <p style={{ marginBottom: '1.5rem' }}>{service.shortDescription}</p>
-                                    
-                                    <div style={{ 
-                                        display: 'grid', 
-                                        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
-                                        gap: '1rem', 
-                                        marginTop: '1.5rem',
-                                        marginBottom: '1.5rem'
-                                    }}>
-                                        {service.features.map((feature, idx) => (
-                                            <div key={idx} style={{ 
-                                                display: 'flex', 
-                                                alignItems: 'center', 
-                                                gap: '0.75rem', 
-                                                padding: '1rem', 
-                                                background: 'rgba(212, 175, 55, 0.05)', 
-                                                border: '1px solid rgba(212, 175, 55, 0.2)', 
-                                                borderRadius: '8px',
-                                                transition: 'transform 0.2s ease, background 0.2s ease'
-                                            }} className="feature-card">
-                                                <div style={{ 
-                                                    background: 'rgba(212, 175, 55, 0.1)', 
-                                                    padding: '6px', 
-                                                    borderRadius: '50%',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center'
-                                                }}>
-                                                    <Check color="#D4AF37" size={16} strokeWidth={3} />
-                                                </div>
-                                                <span style={{ fontWeight: 500, fontSize: '0.95rem' }}>{feature}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-
-                                    <span style={{ color: 'var(--primary-gold)', fontWeight: 600, marginTop: '2rem', display: 'inline-block', borderBottom: '1px solid transparent', transition: 'border-color 0.3s' }} className="hover-underline">
-                                        {service.ctaText}
-                                    </span>
-                                </div>
-                                <div className="service-image-container" style={{ overflow: 'visible' }}>
-                                    <div style={{ position: "relative", height: "100%", width: "100%" }}>
-                                        <img src={service.image} alt={service.title} className="service-img" style={{ borderRadius: "12px", objectFit: "cover", width: "100%", height: "100%" }} />
-                                        <div className="img-overlay" style={{ borderRadius: "12px" }}></div>
-                                        <div style={{ position: "absolute", top: "-20px", left: "-20px", width: "100px", height: "100px", borderTop: "2px solid #D4AF37", borderLeft: "2px solid #D4AF37", zIndex: -1 }}></div>
-                                        <div style={{ position: "absolute", bottom: "-20px", right: "-20px", width: "100px", height: "100px", borderBottom: "2px solid #D4AF37", borderRight: "2px solid #D4AF37", zIndex: -1 }}></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
-                    </Reveal>
-                ))}
-            </div>
             </section>
-        </>
+
+            {/* Footer CTA */}
+            <section className={styles.footerCta}>
+                <Reveal>
+                    <h2 className={styles.footerCtaTitle}>Ready to Get Started?</h2>
+                    <p className={styles.footerCtaText}>Let's discuss how our Shariah-compliant solutions can serve your unique objectives.</p>
+                    <a href="/contact" className={styles.footerBtn}>SCHEDULE CONSULTATION</a>
+                </Reveal>
+            </section>
+        </div>
     );
 }

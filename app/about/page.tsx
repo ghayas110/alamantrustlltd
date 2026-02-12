@@ -1,5 +1,6 @@
 import Reveal from "@/components/Reveal";
 import type { Metadata } from "next";
+import { ShieldCheck, Users, Eye, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
     title: 'About | Al Aman Trust',
@@ -10,15 +11,12 @@ export default function About() {
     return (
         <>
             <section className="section-tight">
-                <div className="section-header">
-                    <Reveal>
-                        <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>About Us</span>
-                        <h2 className="serif">Who We Are</h2>
-                    </Reveal>
-                </div>
-
                 <div className="grid-2" style={{ alignItems: 'start', gap: '4rem' }}>
                     <Reveal>
+                        <div style={{ marginBottom: '2rem' }}>
+                            <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>About Us</span>
+                            <h2 className="serif">Who We Are</h2>
+                        </div>
                         <h3 className="serif" style={{ marginBottom: '1.5rem' }}>Built on <span className="gold">Trust</span>, Backed by <span className="gold">Strength</span></h3>
                         <p style={{ marginBottom: '1.5rem' }}>
                             Al Aman Trust Services is a licensed managed trust company dedicated to providing bespoke solutions in today’s evolving business landscape. Based in the premier midshore jurisdiction of Labuan, Malaysia, we are regulated by the Labuan Financial Services Authority (Labuan FSA).
@@ -108,31 +106,44 @@ export default function About() {
                     </Reveal>
                 </div>
 
-                <div className="grid-2" style={{ marginTop: '2rem' }}>
-                    <Reveal delay={0.1}>
-                         <div style={{ padding: '2rem', background: 'var(--bg-dark)', borderRadius: '12px', color: 'white', height: '100%' }}>
-                            <h3 className="gold" style={{ marginBottom: '1rem' }}>Ethical Conduct</h3>
-                            <p>Unwavering integrity in every interaction.</p>
-                        </div>
-                    </Reveal>
-                     <Reveal delay={0.2}>
-                         <div style={{ padding: '2rem', background: 'var(--bg-dark)', borderRadius: '12px', color: 'white', height: '100%' }}>
-                            <h3 className="gold" style={{ marginBottom: '1rem' }}>Fairness</h3>
-                            <p>Equitable treatment of all stakeholders.</p>
-                        </div>
-                    </Reveal>
-                     <Reveal delay={0.3}>
-                         <div style={{ padding: '2rem', background: 'var(--bg-dark)', borderRadius: '12px', color: 'white', height: '100%' }}>
-                            <h3 className="gold" style={{ marginBottom: '1rem' }}>Transparency</h3>
-                            <p>Clear communication and open processes.</p>
-                        </div>
-                    </Reveal>
-                     <Reveal delay={0.4}>
-                         <div style={{ padding: '2rem', background: 'var(--bg-dark)', borderRadius: '12px', color: 'white', height: '100%' }}>
-                            <h3 className="gold" style={{ marginBottom: '1rem' }}>Accountability</h3>
-                            <p>Responsibility for our actions and outcomes.</p>
-                        </div>
-                    </Reveal>
+                <div className="grid-2" style={{ marginTop: '2rem', gap: '2rem' }}>
+                    {[
+                        { title: "Ethical Conduct", desc: "Unwavering integrity in every interaction.", icon: ShieldCheck, isFeatured: true },
+                        { title: "Fairness", desc: "Equitable treatment of all stakeholders.", icon: Users },
+                        { title: "Transparency", desc: "Clear communication and open processes.", icon: Eye },
+                        { title: "Accountability", desc: "Responsibility for our actions and outcomes.", icon: CheckCircle }
+                    ].map((item, index) => (
+                        <Reveal key={index} delay={index * 0.1}>
+                            <div style={{ 
+                                padding: '2rem', 
+                                background: item.isFeatured ? 'var(--bg-dark)' : 'white', 
+                                borderRadius: '16px', 
+                                color: item.isFeatured ? 'white' : 'var(--text-on-light)', 
+                                height: '100%',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '1.5rem',
+                                boxShadow: item.isFeatured ? '0 10px 30px rgba(0,0,0,0.2)' : '0 4px 15px rgba(0,0,0,0.05)',
+                                border: item.isFeatured ? 'none' : '1px solid rgba(0,0,0,0.05)'
+                            }}>
+                                <div style={{
+                                    background: item.isFeatured ? 'rgba(197, 164, 115, 0.2)' : 'rgba(197, 164, 115, 0.1)',
+                                    padding: '1rem',
+                                    borderRadius: '12px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    flexShrink: 0
+                                }}>
+                                    <item.icon size={32} color="var(--primary-gold)" />
+                                </div>
+                                <div>
+                                    <h3 className={item.isFeatured ? "gold" : ""} style={{ marginBottom: '0.5rem', fontSize: '1.25rem' }}>{item.title}</h3>
+                                    <p style={{ opacity: item.isFeatured ? 0.9 : 1, fontSize: '0.95rem' }}>{item.desc}</p>
+                                </div>
+                            </div>
+                        </Reveal>
+                    ))}
                 </div>
                  <div style={{ marginTop: '3rem', textAlign: 'center' }}>
                      <Reveal>
