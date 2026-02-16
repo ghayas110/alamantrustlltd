@@ -183,12 +183,9 @@ export default function About() {
                         </Reveal>
                     ))}
                 </div>
-
-                <div style={{ marginTop: '4rem', textAlign: 'center', maxWidth: '800px', margin: '4rem auto 0' }}>
+                <div style={{ marginTop: '3rem', textAlign: 'left', paddingLeft: '1.5rem', borderLeft: '3px solid var(--primary-gold-dark)' }}>
                     <Reveal>
-                        <p style={{ fontSize: '1.1rem' }}>
-                            Al Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance, transparency, and client care.
-                        </p>
+                        <p style={{ fontStyle: 'italic', fontSize: '1.1rem', color: 'var(--text-on-light)', margin: 0 }}>"Al Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance, transparency, and client care."</p>
                     </Reveal>
                 </div>
             </section>

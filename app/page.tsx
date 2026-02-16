@@ -11,19 +11,19 @@ export default function Home() {
                     {
                         type: 'image',
                         src: '/images/banner2.png',
-                        title: 'Where Compliance Meets Operational <span class="gold">Excellence</span>',
+                        title: 'Where Compliance Meets Operational <span class="gold-light">Excellence</span>',
                         subtitle: 'We Handle Operations. You Drive Returns.'
                     },
                     {
                         type: 'image',
                         src: '/images/banner3.png',
-                        title: 'Your Values, Our <span class="gold">Commitment</span>, Lasting Trust',
+                        title: 'Your Values, Our <span class="gold-light">Commitment</span>, Lasting Trust',
                         subtitle: 'Wealth solutions in line with your faith and ethics'
                     },
                     {
                         type: 'image',
                         src: '/images/hero.png',
-                        title: 'Your Bridge to the <span class="gold">Gulf & ASEAN</span>',
+                        title: 'Your Bridge to the <span class="gold-light">Gulf & ASEAN</span>',
                         subtitle: 'We Handle Entry. You Focus on Growth'
                     }
                 ]}
