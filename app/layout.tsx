@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import NavigationWrapper from "@/components/NavigationWrapper";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const montserrat = Montserrat({
-    subsets: ["latin"],
-    variable: "--font-montserrat",
-});
 const playfair = Playfair_Display({
     subsets: ["latin"],
     variable: "--font-playfair",
@@ -26,7 +22,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={`${inter.variable} ${montserrat.variable} ${playfair.variable}`}>
+            <body suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
                 <div className="app-container">
                     <NavigationWrapper />
                     <main className="main-content">

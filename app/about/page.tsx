@@ -13,15 +13,15 @@ export default function About() {
             <section className="section-tight">
                 <div className="grid-2" style={{ alignItems: 'start', gap: '4rem' }}>
                     <Reveal>
-                        <div style={{ marginBottom: '2rem' }}>
-                            <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>About Us</span>
-                            <h2 className="serif">Who We Are</h2>
+                        <div style={{ marginBottom: '1.5rem' }}>
+                            <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700', display: 'block', marginBottom: '0.75rem' }}>About Us</span>
+                            <h2 className="serif" style={{ marginBottom: '1rem' }}>Who We Are</h2>
                         </div>
-                        <h3 className="serif" style={{ marginBottom: '1.5rem' }}>Built on <span className="gold">Trust</span>, Backed by <span className="gold">Strength</span></h3>
-                        <p style={{ marginBottom: '1.5rem' }}>
-                            Al Aman Trust Services is a licensed managed trust company dedicated to providing bespoke solutions in today’s evolving business landscape. Based in the premier midshore jurisdiction of Labuan, Malaysia, we are regulated by the Labuan Financial Services Authority (Labuan FSA).
+                        <h3 className="serif" style={{ marginBottom: '2rem' }}>Built on <span className="gold">Trust</span>, Backed by <span className="gold">Strength</span></h3>
+                        <p style={{ marginBottom: '1.75rem' }}>
+                            Al Aman Trust Services is a licensed managed trust company dedicated to providing bespoke solutions in today's evolving business landscape. Based in the premier midshore jurisdiction of Labuan, Malaysia, we are regulated by the Labuan Financial Services Authority (Labuan FSA).
                         </p>
-                        <p style={{ marginBottom: '1.5rem' }}>
+                        <p style={{ marginBottom: '1.75rem' }}>
                             We operate as a wholly owned subsidiary of Rusd Investment Bank Inc., a premier Islamic investment bank, and are a proud member of the RUSD Group. This affiliation allows us to combine local expertise with the global strength and ethical foundations of a leading international conglomerate.
                         </p>
                          <p>
@@ -85,7 +85,7 @@ export default function About() {
                     </Reveal>
                     <Reveal delay={0.2}>
                          <h3 className="serif" style={{ marginBottom: '2rem' }}>Our Heritage: <span className="gold">The RUSD Connection</span></h3>
-                         <p style={{ marginBottom: '1.5rem' }}>
+                         <p style={{ marginBottom: '1.75rem' }}>
                             The RUSD Group, headquartered in Saudi Arabia, has been a pioneer in Shariah-compliant services since 2002. The name "RUSD" reflects a commitment to reviving flexible Islamic economic jurisprudence for the modern era—bridging the gap between tradition and innovation. 
                         </p>
                         <p>
@@ -98,9 +98,9 @@ export default function About() {
             <section className="section-tight">
                  <div className="section-header">
                     <Reveal>
-                        <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>Core Values</span>
-                        <h2 className="serif">Our <span className="gold">Principles</span></h2>
-                         <p style={{ maxWidth: '700px', margin: '2rem auto 0' }}>
+                        <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700', color: 'var(--primary-gold-dark)' }}>Core Values</span>
+                        <h2 className="serif" style={{ color: 'var(--text-on-light)' }}>Our <span style={{ color: 'var(--primary-gold-dark)' }}>Principles</span></h2>
+                         <p style={{ maxWidth: '500px', margin: '2rem 0 0', textAlign: 'left' }}>
                             Our growth is driven by a dynamic, highly experienced team respected across their respective fields. At RUSD, we maintain stringent corporate governance standards anchored in:
                         </p>
                     </Reveal>
@@ -135,19 +135,19 @@ export default function About() {
                                     justifyContent: 'center',
                                     flexShrink: 0
                                 }}>
-                                    <item.icon size={32} color="var(--primary-gold)" />
+                                    <item.icon size={32} color={item.isFeatured ? 'var(--primary-gold-dark)' : 'var(--primary-gold)'} strokeWidth={2.5} />
                                 </div>
                                 <div>
-                                    <h3 className={item.isFeatured ? "gold" : ""} style={{ marginBottom: '0.5rem', fontSize: '1.25rem' }}>{item.title}</h3>
+                                    <h3 style={{ marginBottom: '0.5rem', fontSize: '1.25rem', fontWeight: item.isFeatured ? '800' : '700', color: item.isFeatured ? 'var(--primary-gold-dark)' : 'var(--primary-gold)' }}>{item.title}</h3>
                                     <p style={{ opacity: item.isFeatured ? 0.9 : 1, fontSize: '0.95rem' }}>{item.desc}</p>
                                 </div>
                             </div>
                         </Reveal>
                     ))}
                 </div>
-                 <div style={{ marginTop: '3rem', textAlign: 'center' }}>
+                 <div style={{ marginTop: '3rem', textAlign: 'left', paddingLeft: '1.5rem', borderLeft: '3px solid var(--primary-gold-dark)' }}>
                      <Reveal>
-                        <p className="gold" style={{ fontStyle: 'italic', fontSize: '1.25rem' }}>"These principles guide our day-to-day operations and ensure that trust remains at the heart of everything we do."</p>
+                        <p style={{ fontStyle: 'italic', fontSize: '1.1rem', color: 'var(--text-on-light)', margin: 0 }}>"These principles guide our day-to-day operations and ensure that trust remains at the heart of everything we do."</p>
                     </Reveal>
                  </div>
             </section>
