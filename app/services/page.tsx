@@ -69,7 +69,7 @@ export default function Services() {
                                 <li>Compliance & Substance</li>
                                 <li>Corporate Secretarial</li>
                             </ul>
-                            <a href="/services/corporate-services" className={styles.serviceLink}>Learn More →</a>
+                            <a href="/services/corporate-solutions" className={styles.serviceLink}>Learn More →</a>
                         </div>
                     </Reveal>
 
@@ -86,7 +86,7 @@ export default function Services() {
                                 <li>Private Funds Setup</li>
                                 <li>Multi-Family Office</li>
                             </ul>
-                            <a href="/services/private-client-services" className={styles.serviceLink}>Learn More →</a>
+                            <a href="/services/private-client-advisory" className={styles.serviceLink}>Learn More →</a>
                         </div>
                     </Reveal>
 
@@ -120,7 +120,7 @@ export default function Services() {
                                 <li>Business Localization</li>
                                 <li>Regulatory Navigation</li>
                             </ul>
-                            <a href="/services/business-support-soft-landing" className={styles.serviceLink}>Learn More →</a>
+                            <a href="/services/business-soft-landing" className={styles.serviceLink}>Learn More →</a>
                         </div>
                     </Reveal>
                 </div>
