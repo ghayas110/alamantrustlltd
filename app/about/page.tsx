@@ -100,7 +100,7 @@ export default function About() {
                     <Reveal>
                         <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700', color: 'var(--primary-gold-dark)' }}>Core Values</span>
                         <h2 className="serif" style={{ color: 'var(--text-on-light)' }}>Our <span style={{ color: 'var(--primary-gold-dark)' }}>Principles</span></h2>
-                         <p style={{ maxWidth: '500px', margin: '2rem 0 0', textAlign: 'left' }}>
+                         <p style={{ maxWidth: '800px', margin: '2rem 0 0', textAlign: 'left' }}>
                             Our growth is driven by a dynamic, highly experienced team respected across their respective fields. At RUSD, we maintain stringent corporate governance standards anchored in:
                         </p>
                     </Reveal>
