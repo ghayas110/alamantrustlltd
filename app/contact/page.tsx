@@ -1,5 +1,6 @@
 import Reveal from "@/components/Reveal";
 import type { Metadata } from "next";
+import styles from "./contact.module.css";
 
 export const metadata: Metadata = {
     title: 'Contact | Al Aman Trust',
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
     return (
-        <section className="section">
+        <section className={styles.contactSection}>
             <div className="section-header">
                 <Reveal>
                     <span className="gold" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '700' }}>Connect</span>
@@ -16,14 +17,14 @@ export default function Contact() {
                 </Reveal>
             </div>
 
-            <div className="grid" style={{ gridTemplateColumns: '1.5fr 1fr', gap: '6rem' }}>
+            <div className={styles.mainGrid}>
                 <Reveal>
                     <form action="#" className="contact-form">
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
                             <input type="text" id="name" name="name" required placeholder="Your full name" />
                         </div>
-                        <div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+                        <div className={styles.formGrid}>
                             <div className="form-group">
                                 <label htmlFor="email">Email address</label>
                                 <input type="email" id="email" name="email" required placeholder="email@example.com" />
