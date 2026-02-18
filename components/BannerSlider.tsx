@@ -129,7 +129,7 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                                             style={{
                                                 color: '#fff',
                                                 fontSize: 'clamp(2.5rem, 6vw, 5rem)',
-                                                fontFamily: 'var(--font-playfair), serif',
+                                                fontFamily: 'var(--font-montserrat), \'Montserrat\', sans-serif',
                                                 fontWeight: 700,
                                                 lineHeight: 1.1,
                                                 maxWidth: '900px',

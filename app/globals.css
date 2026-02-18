@@ -140,8 +140,8 @@ h3 {
 }
 
 .logo-icon-container {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -151,15 +151,15 @@ h3 {
 }
 
 .scrolled .logo-icon-container {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
 }
 
 .logo-icon {
     width: 100%;
     height: auto;
     object-fit: contain;
-    transform: scale(1.4);
+    transform: scale(1.2);
     /* Zoom in to focus on icon */
     transform-origin: top center;
 }
@@ -171,20 +171,20 @@ h3 {
 }
 
 .brand-name {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 800;
-    color: #1a1a1a;
+    color: #224C41;
     line-height: 1;
-    letter-spacing: -0.5px;
-    font-family: var(--font-playfair), serif;
+    letter-spacing: -0.8px;
+    font-family: var(--font-montserrat), 'Montserrat', sans-serif;
 }
 
 .brand-subtext {
-    font-size: 0.75rem;
+    font-size: 0.60rem;
     color: var(--primary-gold-dark);
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.2px;
     margin-top: 2px;
 }
 
@@ -238,13 +238,13 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 90px;
     background: #ffffff;
     display: flex;
     align-items: center;
     z-index: 1000;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 0 5%;
+    padding: 0 7%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -279,7 +279,7 @@ h3 {
     text-decoration: none;
     color: #1a1a1a;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: all 0.3s;
     position: relative;
     padding-bottom: 6px;

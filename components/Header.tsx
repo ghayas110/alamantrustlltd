@@ -42,8 +42,8 @@ export default function Header() {
                         />
                     </div>
                     <div className="logo-text">
-                        <span className="brand-name">Al-Aman</span>
-                        <span className="brand-subtext">Trust Services Limited</span>
+                        <span className="brand-name">Al-AMAN TRUST</span>
+                        <span className="brand-subtext">Empowering Growth, Upholding Values</span>
                     </div>
                 </Link>
                 
