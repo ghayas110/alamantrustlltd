@@ -9,10 +9,11 @@
     --text-light: #6B7280;
     --border: #E5E7EB;
 
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-lato), 'Lato', sans-serif;
     background: var(--cream);
     color: var(--text);
     line-height: 1.6;
+    font-weight: 400;
 }
 
 .servicePage * {
@@ -61,7 +62,7 @@
 }
 
 .heroNumber {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-montserrat), 'Montserrat', sans-serif;
     font-size: 10rem;
     font-weight: 900;
     color: rgba(201, 169, 97, 0.15);
@@ -82,7 +83,7 @@
 }
 
 .pageTitle {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-montserrat), 'Montserrat', sans-serif;
     font-size: 4.5rem;
     font-weight: 700;
     color: var(--navy);

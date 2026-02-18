@@ -38,13 +38,14 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-lato), 'Lato', sans-serif;
     color: var(--text-on-light);
     background-color: var(--bg-light);
     line-height: 1.8;
     letter-spacing: 0.3px;
     overflow-x: hidden;
     font-size: var(--p-size);
+    font-weight: 400;
 }
 
 h1,
@@ -52,7 +53,7 @@ h2,
 h3,
 h4,
 .serif {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-montserrat), 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;

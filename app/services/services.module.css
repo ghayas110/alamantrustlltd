@@ -41,7 +41,7 @@
 }
 
 .heroNumber {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-montserrat), 'Montserrat', sans-serif;
     font-size: 12rem;
     font-weight: 900;
     color: rgba(201, 169, 97, 0.15);
@@ -51,7 +51,7 @@
 }
 
 .heroTitle {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-montserrat), 'Montserrat', sans-serif;
     font-size: 4.5rem;
     font-weight: 700;
     color: white;
