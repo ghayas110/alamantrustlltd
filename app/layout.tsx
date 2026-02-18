@@ -4,19 +4,19 @@ import "./globals.css";
 import NavigationWrapper from "@/components/NavigationWrapper";
 import Footer from "@/components/Footer";
 
-const montserrat = Montserrat({
-    subsets: ["latin"],
-    variable: "--font-montserrat",
+const montserrat = Montserrat({ 
+    subsets: ["latin"], 
     weight: ["700"],
+    variable: "--font-montserrat" 
 });
 const lato = Lato({
     subsets: ["latin"],
+    weight: ["400", "700"],
     variable: "--font-lato",
-    weight: ["400"],
 });
 
 export const metadata: Metadata = {
-    title: "Al Aman Trust",
+    title: "Al-Aman Trust",
     description: "Excellence in ethical consulting.",
 };
 

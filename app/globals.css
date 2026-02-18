@@ -19,6 +19,10 @@
     --p-size: 1rem;
     --p-lg-size: 1.125rem;
 
+    /* Font Families */
+    --font-heading: var(--font-montserrat), "Montserrat", sans-serif;
+    --font-body: var(--font-lato), "Lato", sans-serif;
+
     /* Spacing */
     --section-padding: 6rem 10%;
     --section-tight-padding: 4rem 10%;
@@ -127,12 +131,69 @@ h3 {
     padding: 0.5rem;
 }
 
-.logo {
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo-icon-container {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Crop from top to hide text below icon */
+    transition: all 0.3s ease;
+}
+
+.scrolled .logo-icon-container {
+    width: 45px;
+    height: 45px;
+}
+
+.logo-icon {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: scale(1.4);
+    /* Zoom in to focus on icon */
+    transform-origin: top center;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-name {
     font-size: 1.6rem;
     font-weight: 800;
     color: #1a1a1a;
-    text-decoration: none;
+    line-height: 1;
     letter-spacing: -0.5px;
+    font-family: var(--font-playfair), serif;
+}
+
+.brand-subtext {
+    font-size: 0.75rem;
+    color: var(--primary-gold-dark);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+.logo-wrapper:hover {
+    transform: translateY(-2px);
+}
+
+.logo-wrapper:hover .brand-name {
+    color: var(--primary-gold-dark);
 }
 
 .nav-links {
@@ -168,7 +229,7 @@ h3 {
     margin-left: 0;
     flex: 1;
     min-width: 0;
-    padding-top: 90px;
+    padding-top: 80px;
 }
 
 /* Top Header */
@@ -177,7 +238,7 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
-    height: 90px;
+    height: 80px;
     background: #ffffff;
     display: flex;
     align-items: center;
@@ -190,7 +251,7 @@ h3 {
 .top-header.scrolled {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    height: 70px;
+    height: 60px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
@@ -201,6 +262,11 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+}
+
+.desktop-nav {
+    margin-left: auto;
 }
 
 .desktop-nav ul {

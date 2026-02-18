@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Testimonials | Al Aman Trust',
+    title: 'Testimonials | Al-Aman Trust',
 };
 
 export default function Testimonials() {
@@ -22,7 +22,7 @@ export default function Testimonials() {
                     <Reveal>
                         <div className="testimonial-card">
                             <span className="quote-icon">“</span>
-                            <p className="testimonial-text">Al Aman Trust provided us with exceptional guidance on Shariah-compliant investments that truly aligned with our values. Their team's expertise made the process seamless and trustworthy.</p>
+                            <p className="testimonial-text">Al-Aman Trust provided us with exceptional guidance on Shariah-compliant investments that truly aligned with our values. Their team's expertise made the process seamless and trustworthy.</p>
                             <div className="testimonial-author">Brandon Vega</div>
                             <div className="testimonial-company">Ethical Investments Co.</div>
                         </div>
@@ -31,7 +31,7 @@ export default function Testimonials() {
                     <Reveal delay={0.1}>
                         <div className="testimonial-card">
                             <span className="quote-icon">“</span>
-                            <p className="testimonial-text">I appreciate the tailored business solutions Al Aman Trust offered us. Their commitment to Shariah compliance gave us the confidence we needed to move forward with our expansion plans.</p>
+                            <p className="testimonial-text">I appreciate the tailored business solutions Al-Aman Trust offered us. Their commitment to Shariah compliance gave us the confidence we needed to move forward with our expansion plans.</p>
                             <div className="testimonial-author">Chris Wei</div>
                             <div className="testimonial-company">Global Corp.</div>
                         </div>

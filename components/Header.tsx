@@ -33,16 +33,18 @@ export default function Header() {
     return (
         <header className={`top-header ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
             <div className="header-container">
-                <Link href="/" className="logo">
-                   <img 
-                        src="/logo.png" 
-                        alt="Al Aman Trust" 
-                        style={{ 
-                            height: isScrolled ? '130px' : '165px', 
-                            width: 'auto',
-                            transition: 'height 0.3s ease'
-                        }} 
-                    />
+                <Link href="/" className="logo-wrapper">
+                    <div className="logo-icon-container">
+                        <img 
+                            src="/logo.png" 
+                            alt="Al-Aman Trust Logo" 
+                            className="logo-icon"
+                        />
+                    </div>
+                    <div className="logo-text">
+                        <span className="brand-name">Al-Aman</span>
+                        <span className="brand-subtext">Trust Services Limited</span>
+                    </div>
                 </Link>
                 
                 <nav className={`desktop-nav ${isMenuOpen ? 'open' : ''}`}>
@@ -51,7 +53,6 @@ export default function Header() {
                             <li key={link.href}>
                                 <Link 
                                     href={link.href} 
-                                    style={{ fontSize: '1.2rem' }}
                                     className={pathname === link.href ? 'active' : ''}
                                 >
                                     {link.name}
@@ -59,11 +60,10 @@ export default function Header() {
                             </li>
                         ))}
                     </ul>
-                   
                 </nav>
 
                 <div className="header-actions">
-                    <Link href="/contact" className="btn btn-sm hide-mobile">Get Started</Link>
+                    <Link href="/contact" className="btn btn-sm hide-mobile">Connect Me</Link>
                     <button 
                         className="mobile-toggle" 
                         onClick={() => setIsMenuOpen(!isMenuOpen)}

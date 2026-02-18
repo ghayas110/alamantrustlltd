@@ -17,6 +17,7 @@ export default function Home() {
                     {
                         type: 'image',
                         src: '/images/banner3.png',
+                      
                         title: 'Your Values, Our <span class="gold-light">Commitment</span>, Lasting Trust',
                         subtitle: 'Wealth solutions in line with your faith and ethics'
                     },

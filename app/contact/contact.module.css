@@ -1,0 +1,39 @@
+.contactSection {
+    padding: var(--section-padding);
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 6rem;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .mainGrid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .formGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contactSection {
+        padding: 4rem 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainGrid {
+        gap: 3rem;
+    }
+}
