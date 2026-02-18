@@ -21,7 +21,6 @@ export default function CorporateSolutionsPage() {
                 </div>
                 
                 <div className={styles.heroContent}>
-                    <div className={styles.heroNumber}>01</div>
                     <div className={styles.heroText}>
                         <div className={styles.serviceCategory}>CORPORATE EXCELLENCE</div>
                         <h1 className={styles.pageTitle}>Corporate Services</h1>
@@ -74,24 +73,19 @@ export default function CorporateSolutionsPage() {
             {/* Services List */}
             <section className={styles.servicesSection}>
                 <div className={styles.sectionHeader}>
-                    <h2 className={styles.sectionTitle}>Our Corporate Services</h2>
-                    <div className={styles.sectionCount}>7 COMPREHENSIVE SOLUTIONS</div>
+                    <h2 className={styles.sectionTitle}>Corporate Set-ups</h2>
                 </div>
 
                 <div className={styles.serviceList}>
                     {/* Service 1 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>01</div>
-                            <div className={styles.indexTotal}>/ 07</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Business Set-ups & Soft-Landing</h3>
                                 <p className={styles.serviceDescription}>
                                     Strategic guidance for establishing your presence in Labuan and key markets. We handle everything from jurisdiction analysis to business banking—so you can focus on growth.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -108,17 +102,13 @@ export default function CorporateSolutionsPage() {
 
                     {/* Service 2 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>02</div>
-                            <div className={styles.indexTotal}>/ 07</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Accounting & Tax Services</h3>
                                 <p className={styles.serviceDescription}>
                                     Comprehensive financial management tailored to Labuan's favorable tax regime. Delivered by professionals who understand local and international standards.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -135,17 +125,13 @@ export default function CorporateSolutionsPage() {
 
                     {/* Service 3 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>03</div>
-                            <div className={styles.indexTotal}>/ 07</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Compliance & Substance Requirements</h3>
                                 <p className={styles.serviceDescription}>
                                     Ensure your entity meets Labuan's substance requirements and maintains regulatory good standing with comprehensive compliance support.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -162,17 +148,13 @@ export default function CorporateSolutionsPage() {
 
                     {/* Service 4 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>04</div>
-                            <div className={styles.indexTotal}>/ 07</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Corporate Secretarial Services</h3>
                                 <p className={styles.serviceDescription}>
                                     Professional support ensuring statutory compliance and good corporate governance across all your corporate obligations.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -189,17 +171,13 @@ export default function CorporateSolutionsPage() {
 
                     {/* Service 5 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>05</div>
-                            <div className={styles.indexTotal}>/ 07</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Registered Office & Directors</h3>
                                 <p className={styles.serviceDescription}>
                                     Professional registered office facilities and nominee director services meeting regulatory requirements while maintaining operational flexibility.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -216,17 +194,13 @@ export default function CorporateSolutionsPage() {
 
                     {/* Service 6 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>06</div>
-                            <div className={styles.indexTotal}>/ 07</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Cash Management Services</h3>
                                 <p className={styles.serviceDescription}>
                                     Treasury and cash management solutions optimizing liquidity while maintaining security and full regulatory compliance.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -243,17 +217,13 @@ export default function CorporateSolutionsPage() {
 
                     {/* Service 7 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>07</div>
-                            <div className={styles.indexTotal}>/ 07</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>HR & Payroll Services</h3>
                                 <p className={styles.serviceDescription}>
                                     Complete human resource and payroll administration ensuring compliance with local employment regulations.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -365,7 +335,6 @@ export default function CorporateSolutionsPage() {
                     
                     <div className={styles.ctaButtons}>
                         <Link href="/contact" className={styles.btnPrimary}>Schedule Consultation</Link>
-                        <Link href="#" className={styles.btnSecondary}>Download Brochure</Link>
                     </div>
                     
                     <div className={styles.contactInfo}>

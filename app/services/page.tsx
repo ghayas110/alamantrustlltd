@@ -13,7 +13,6 @@ export default function Services() {
             <section className={styles.hero}>
                 <div className={styles.heroLeft}>
                     <Reveal>
-                        <div className={styles.heroNumber}>01</div>
                         <h1 className={styles.heroTitle}>Solutions That Honor Values</h1>
                         <p className={styles.heroSubtitle}>SHARIAH-COMPLIANT EXCELLENCE</p>
                     </Reveal>
@@ -28,10 +27,7 @@ export default function Services() {
                                 <div className={styles.statNumber}>15+</div>
                                 <div className={styles.statLabel}>Years Experience</div>
                             </div>
-                            <div className={styles.stat}>
-                                <div className={styles.statNumber}>500+</div>
-                                <div className={styles.statLabel}>Clients Served</div>
-                            </div>
+
                             <div className={styles.stat}>
                                 <div className={styles.statNumber}>3</div>
                                 <div className={styles.statLabel}>Key Markets</div>
@@ -58,7 +54,7 @@ export default function Services() {
                 <div className={styles.servicesScroll}>
                     <Reveal>
                         <div className={styles.serviceCardAlt}>
-                            <div className={styles.serviceNumberSmall}>01 / CORPORATE</div>
+                            <div className={styles.serviceNumberSmall}>CORPORATE</div>
                             <h3 className={styles.serviceTitleAlt}>Corporate Services</h3>
                             <p className={styles.serviceDescAlt}>
                                 Comprehensive management of your business lifecycle, from tax efficiency to stringent regulatory compliance.
@@ -75,7 +71,7 @@ export default function Services() {
 
                     <Reveal>
                         <div className={styles.serviceCardAlt}>
-                            <div className={styles.serviceNumberSmall}>02 / PRIVATE WEALTH</div>
+                            <div className={styles.serviceNumberSmall}>PRIVATE WEALTH</div>
                             <h3 className={styles.serviceTitleAlt}>Private Client Services</h3>
                             <p className={styles.serviceDescAlt}>
                                 Sophisticated wealth structuring for individuals and families within Shariah-compliant frameworks.
@@ -92,7 +88,7 @@ export default function Services() {
 
                     <Reveal>
                         <div className={styles.serviceCardAlt}>
-                            <div className={styles.serviceNumberSmall}>03 / FUNDS</div>
+                            <div className={styles.serviceNumberSmall}>FUNDS</div>
                             <h3 className={styles.serviceTitleAlt}>Fund Services</h3>
                             <p className={styles.serviceDescAlt}>
                                 Launch and manage investment vehicles with precision and regulatory knowledge.
@@ -109,7 +105,7 @@ export default function Services() {
 
                     <Reveal>
                         <div className={styles.serviceCardAlt}>
-                            <div className={styles.serviceNumberSmall}>04 / EXPANSION</div>
+                            <div className={styles.serviceNumberSmall}>EXPANSION</div>
                             <h3 className={styles.serviceTitleAlt}>Soft-Landing Services</h3>
                             <p className={styles.serviceDescAlt}>
                                 Transform market entry ambitions into operational realities across high-growth markets.
@@ -126,13 +122,15 @@ export default function Services() {
                 </div>
             </section>
 
-            {/* Footer CTA */}
-            <section className={styles.footerCta}>
-                <Reveal>
-                    <h2 className={styles.footerCtaTitle}>Ready to Connect?</h2>
-                    <p className={styles.footerCtaText}>Let's discuss how our Shariah-compliant solutions can serve your unique objectives.</p>
-                    <a href="/contact" className={styles.footerBtn}>SCHEDULE CONSULTATION</a>
-                </Reveal>
+            {/* Get in Touch CTA */}
+            <section className={styles.ctaBanner}>
+                <div className={styles.ctaOverlay}>
+                    <Reveal>
+                        <h2 className={styles.ctaTitle}>Get in touch</h2>
+                        <p className={styles.ctaSubtitle}>Explore shariah-compliant solutions</p>
+                        <a href="/contact" className={styles.ctaBtn}>Get in touch</a>
+                    </Reveal>
+                </div>
             </section>
         </div>
     );

@@ -21,7 +21,6 @@ export default function SoftLandingServicesPage() {
                 </div>
                 
                 <div className={styles.heroContent}>
-                    <div className={styles.heroNumber}>04</div>
                     <div className={styles.heroText}>
                         <div className={styles.serviceCategory}>MARKET EXPANSION</div>
                         <h1 className={styles.pageTitle}>Business Support & Soft-Landing Services</h1>
@@ -80,17 +79,13 @@ export default function SoftLandingServicesPage() {
                 <div className={styles.serviceList}>
                     {/* Service 1 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>01</div>
-                            <div className={styles.indexTotal}>/ 03</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Strategic Market Entry Assessment</h3>
                                 <p className={styles.serviceDescription}>
                                     Comprehensive market opportunity assessment and feasibility analysis to ensure informed expansion decisions.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -107,17 +102,13 @@ export default function SoftLandingServicesPage() {
 
                     {/* Service 2 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>02</div>
-                            <div className={styles.indexTotal}>/ 03</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Setup & Licensing Execution</h3>
                                 <p className={styles.serviceDescription}>
                                     Complete establishment and regulatory approval, handling all aspects of company formation and licensing.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -134,17 +125,13 @@ export default function SoftLandingServicesPage() {
 
                     {/* Service 3 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>03</div>
-                            <div className={styles.indexTotal}>/ 03</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Business Localization Support</h3>
                                 <p className={styles.serviceDescription}>
                                     Operational setup for seamless market integration, from staffing to cultural adaptation.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -262,7 +249,6 @@ export default function SoftLandingServicesPage() {
                     
                     <div className={styles.ctaButtons}>
                         <Link href="/contact" className={styles.btnPrimary}>Schedule Market Entry Consultation</Link>
-                        <Link href="#" className={styles.btnSecondary}>Download Market Guide</Link>
                     </div>
                     
                     <div className={styles.contactInfo}>

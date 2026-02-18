@@ -46,14 +46,16 @@ export default function Home() {
                     </div>
                 </div>
          <div className="grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
-    <Reveal>
+    <Reveal className="h-full">
         <Link 
             href="/services/corporate-solutions" 
             className="card" 
             style={{ 
                 textDecoration: 'none', 
                 color: 'inherit',
-                display: 'block',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
                 border: '1px solid #C5A473', // Theme-aligned border
                 borderRadius: '8px',
                 overflow: 'hidden',
@@ -61,22 +63,24 @@ export default function Home() {
                 transition: 'transform 0.3s ease'
             }}
         >
-            <img src="/images/service-1.png" alt="Corporate Services" className="card-image" style={{ width: '100%', height: 'auto', display: 'block' }} />
-            <div className="card-body" style={{ padding: '20px' }}>
+            <img src="/images/service-1.png" alt="Corporate Services" className="card-image" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+            <div className="card-body" style={{ padding: '20px', flex: '1', display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ color: '#C5A473', marginTop: '0' }}>Corporate Services</h3>
                 <p>Tailored Strategies That Reflect Your Vision. Your trusted corporate partner.</p>
             </div>
         </Link>
     </Reveal>
 
-    <Reveal delay={0.1}>
+    <Reveal delay={0.1} className="h-full">
         <Link 
             href="/services/private-client-advisory" 
             className="card" 
             style={{ 
                 textDecoration: 'none', 
                 color: 'inherit',
-                display: 'block',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
                 border: '1px solid #C5A473',
                 borderRadius: '8px',
                 overflow: 'hidden',
@@ -84,22 +88,24 @@ export default function Home() {
                 transition: 'transform 0.3s ease'
             }}
         >
-            <img src="/images/service-3.png" alt="Private Client Services" className="card-image" style={{ width: '100%', height: 'auto', display: 'block' }} />
-            <div className="card-body" style={{ padding: '20px' }}>
+            <img src="/images/service-3.png" alt="Private Client Services" className="card-image" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+            <div className="card-body" style={{ padding: '20px', flex: '1', display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ color: '#C5A473', marginTop: '0' }}>Private Client Services</h3>
                 <p> Wealth solutions in line with your faith and ethics.</p>
             </div>
         </Link>
     </Reveal>
 
-    <Reveal delay={0.2}>
+    <Reveal delay={0.2} className="h-full">
         <Link 
             href="/services/fund-services" 
             className="card" 
             style={{ 
                 textDecoration: 'none', 
                 color: 'inherit',
-                display: 'block',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
                 border: '1px solid #C5A473',
                 borderRadius: '8px',
                 overflow: 'hidden',
@@ -107,22 +113,24 @@ export default function Home() {
                 transition: 'transform 0.3s ease'
             }}
         >
-            <img src="/images/service-2.png" alt="Fund Services" className="card-image" style={{ width: '100%', height: 'auto', display: 'block' }} />
-            <div className="card-body" style={{ padding: '20px' }}>
+            <img src="/images/service-2.png" alt="Fund Services" className="card-image" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+            <div className="card-body" style={{ padding: '20px', flex: '1', display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ color: '#C5A473', marginTop: '0' }}>Fund Services</h3>
                 <p>Where Compliance Meets Operational Excellence. We Handle Operations. You Drive Returns.</p>
             </div>
         </Link>
     </Reveal>
 
-    <Reveal delay={0.3}>
+    <Reveal delay={0.3} className="h-full">
         <Link 
             href="/services/business-soft-landing" 
             className="card" 
             style={{ 
                 textDecoration: 'none', 
                 color: 'inherit',
-                display: 'block',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
                 border: '1px solid #C5A473',
                 borderRadius: '8px',
                 overflow: 'hidden',
@@ -130,8 +138,8 @@ export default function Home() {
                 transition: 'transform 0.3s ease'
             }}
         >
-            <img src="/images/business-soft-landing-home.png" alt="Business Soft-landing" className="card-image" style={{ width: '100%', height: 'auto', display: 'block' }} />
-            <div className="card-body" style={{ padding: '20px' }}>
+            <img src="/images/business-soft-landing-home.png" alt="Business Soft-landing" className="card-image" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+            <div className="card-body" style={{ padding: '20px', flex: '1', display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ color: '#C5A473', marginTop: '0' }}>Business Support & Soft-Landing</h3>
                 <p>Your Bridge to the Gulf & ASEAN. We Handle Entry. You Focus on Growth.</p>
             </div>

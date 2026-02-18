@@ -21,7 +21,6 @@ export default function PrivateClientAdvisoryPage() {
                 </div>
                 
                 <div className={styles.heroContent}>
-                    <div className={styles.heroNumber}>02</div>
                     <div className={styles.heroText}>
                         <div className={styles.serviceCategory}>WEALTH PRESERVATION</div>
                         <h1 className={styles.pageTitle}>Private Client Services</h1>
@@ -75,23 +74,19 @@ export default function PrivateClientAdvisoryPage() {
             <section className={styles.servicesSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>Our Private Client Services</h2>
-                    <div className={styles.sectionCount}>6 WEALTH SOLUTIONS</div>
+
                 </div>
 
                 <div className={styles.serviceList}>
                     {/* Service 1 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>01</div>
-                            <div className={styles.indexTotal}>/ 06</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Wealth Planning & Strategy</h3>
                                 <p className={styles.serviceDescription}>
                                     Holistic wealth planning aligning financial structures with personal values and family objectives for sustainable multi-generational prosperity.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -108,17 +103,13 @@ export default function PrivateClientAdvisoryPage() {
 
                     {/* Service 2 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>02</div>
-                            <div className={styles.indexTotal}>/ 06</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Trust & Foundation Management</h3>
                                 <p className={styles.serviceDescription}>
                                     Professional establishment and administration of trusts and foundations for asset protection and seamless wealth transfer across generations.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -135,17 +126,13 @@ export default function PrivateClientAdvisoryPage() {
 
                     {/* Service 3 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>03</div>
-                            <div className={styles.indexTotal}>/ 06</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Private Fund Set-ups</h3>
                                 <p className={styles.serviceDescription}>
                                     Bespoke private fund structures for family investment vehicles and exclusive investor groups with full regulatory compliance.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -162,17 +149,13 @@ export default function PrivateClientAdvisoryPage() {
 
                     {/* Service 4 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>04</div>
-                            <div className={styles.indexTotal}>/ 06</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Accounting for Private Clients</h3>
                                 <p className={styles.serviceDescription}>
                                     Discreet, comprehensive accounting services for personal wealth management with complete confidentiality and precision.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -189,17 +172,13 @@ export default function PrivateClientAdvisoryPage() {
 
                     {/* Service 5 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>05</div>
-                            <div className={styles.indexTotal}>/ 06</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Universal Life Insurance Structuring</h3>
                                 <p className={styles.serviceDescription}>
                                     Strategic advice on universal life insurance as a wealth preservation tool within Shariah-compliant frameworks.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -216,17 +195,13 @@ export default function PrivateClientAdvisoryPage() {
 
                     {/* Service 6 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>06</div>
-                            <div className={styles.indexTotal}>/ 06</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Multi-Family Office Services</h3>
                                 <p className={styles.serviceDescription}>
                                     Comprehensive family office solutions serving multiple families with shared infrastructure and dedicated expertise.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -338,7 +313,6 @@ export default function PrivateClientAdvisoryPage() {
                     
                     <div className={styles.ctaButtons}>
                         <Link href="/contact" className={styles.btnPrimary}>Schedule Private Consultation</Link>
-                        <Link href="#" className={styles.btnSecondary}>Request Information</Link>
                     </div>
                     
                     <div className={styles.contactInfo}>

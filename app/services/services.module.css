@@ -91,7 +91,7 @@
 
 .statsGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-bottom: 48px;
 }
@@ -143,7 +143,7 @@
 
 /* Services Section */
 .servicesSection {
-    padding: 120px 0;
+    padding: 80px 0;
     background: white;
     overflow: hidden;
 }
@@ -152,7 +152,7 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 60px;
-    margin-bottom: 80px;
+    margin-bottom: 48px;
 }
 
 .sectionLabel {
@@ -174,29 +174,32 @@
 }
 
 .servicesScroll {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 0 60px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: stretch;
 }
 
-.servicesScroll::-webkit-scrollbar {
-    display: none;
+.servicesScroll>* {
+    display: flex;
+    height: 100%;
 }
 
 .serviceCardAlt {
-    min-width: 550px;
+    min-width: unset;
     background: #F9F7F4;
     /* --cream */
-    padding: 60px 50px;
-    scroll-snap-align: start;
+    padding: 32px 28px;
     border: 1px solid #E5E5E5;
     transition: all 0.4s ease;
     position: relative;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    width: 100%;
 }
 
 .serviceCardAlt:hover {
@@ -207,40 +210,40 @@
 
 .serviceNumberSmall {
     font-family: var(--font-playfair), serif;
-    font-size: 1rem;
+    font-size: 0.813rem;
     color: #C9A961;
     /* --gold */
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     letter-spacing: 0.1em;
 }
 
 .serviceTitleAlt {
     font-family: var(--font-playfair), serif;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #0F1419;
     /* --navy */
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     line-height: 1.2;
 }
 
 .serviceDescAlt {
-    font-size: 1rem;
+    font-size: 0.875rem;
     color: #6B7280;
     /* --text-light */
-    line-height: 1.7;
-    margin-bottom: 32px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .serviceList {
     list-style: none;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .serviceList li {
-    padding: 12px 0;
+    padding: 8px 0;
     border-bottom: 1px solid #E5E5E5;
-    font-size: 0.938rem;
+    font-size: 0.813rem;
     color: #2D3540;
     /* --text */
 }
@@ -265,48 +268,56 @@
     gap: 12px;
 }
 
-/* Footer CTA */
-.footerCta {
-    background: #0F1419;
-    /* --navy */
-    padding: 100px 60px;
-    text-align: center;
+/* CTA Banner */
+.ctaBanner {
+    position: relative;
+    background: url('/images/cta-bg.png') center/cover no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
 }
 
-.footerCtaTitle {
+.ctaOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 20, 25, 0.7);
+    display: flex;
+    align-items: center;
+    padding: 80px 60px;
+}
+
+.ctaTitle {
     font-family: var(--font-playfair), serif;
-    font-size: 3rem;
-    color: white;
-    margin-bottom: 24px;
+    font-size: 3.5rem;
+    color: #C9A961;
+    margin-bottom: 16px;
+    font-style: italic;
+    font-weight: 400;
 }
 
-.footerCtaText {
-    color: #E4D4A8;
-    /* --gold-light */
+.ctaSubtitle {
     font-size: 1.25rem;
-    margin-bottom: 48px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #E4D4A8;
+    margin-bottom: 40px;
+    font-weight: 300;
 }
 
-.footerBtn {
+.ctaBtn {
     display: inline-block;
-    padding: 20px 60px;
-    background: #C9A961;
-    /* --gold */
-    color: #0F1419;
-    /* --navy */
+    padding: 14px 36px;
+    border: 1.5px solid white;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    font-size: 0.938rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.footerBtn:hover {
-    background: #E4D4A8;
-    /* --gold-light */
+.ctaBtn:hover {
+    background: white;
+    color: #0F1419;
 }
 
 @media (max-width: 1024px) {
@@ -322,7 +333,15 @@
         font-size: 2.5rem;
     }
 
-    .serviceCardAlt {
-        min-width: 350px;
+    .servicesScroll {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .servicesScroll {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
     }
 }

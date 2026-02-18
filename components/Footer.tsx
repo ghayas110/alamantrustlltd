@@ -6,12 +6,12 @@ export default function Footer() {
         <footer className="site-footer">
             <div className="footer-columns">
                 <div className="footer-column footer-brand">
-                    <h3 className="serif gold">Al-Aman Trust</h3>
+                    <h3 className="serif gold">Al Aman Trust Services Limited</h3>
                     <p className="footer-description">
-                        Al-Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance.
+                        Al Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance.
                     </p>
                     <Link href="/contact" className="footer-btn">
-                        Let's Talk <ArrowUpRight size={20} />
+                        Connect Me <ArrowUpRight size={20} />
                     </Link>
                 </div>
 
@@ -45,13 +45,7 @@ export default function Footer() {
 
             <div className="bottom-bar">
                 <div className="copyright">
-                    <p>© {new Date().getFullYear()} Al-Aman Trust. All rights reserved.</p>
-                </div>
-
-                <div className="social-icons">
-                    <a href="#" className="social-icon"><Facebook size={20} /></a>
-                    <a href="#" className="social-icon"><Twitter size={20} /></a>
-                    <a href="#" className="social-icon"><Linkedin size={20} /></a>
+                    <p>© {new Date().getFullYear()} Al Aman Trust Services Limited. All rights reserved.</p>
                 </div>
 
                 <div className="legal-links">

@@ -29,14 +29,14 @@ export default function About() {
                         </p>
                     </Reveal>
                     <Reveal delay={0.2}>
-                         <div style={{ position: 'relative' }}>
+                         <div style={{ position: 'relative', padding: '1rem' }}>
                             <div style={{
                                 position: 'absolute',
-                                top: '-20px',
-                                right: '-20px',
-                                width: '100%',
-                                height: '100%',
-                                border: '2px solid var(--primary-gold)',
+                                top: '0',
+                                right: '0',
+                                width: '80%',
+                                height: '80%',
+                                background: 'rgba(197, 164, 115, 0.1)',
                                 borderRadius: '20px',
                                 zIndex: 0
                             }}></div>
@@ -48,9 +48,20 @@ export default function About() {
                                     borderRadius: '20px', 
                                     position: 'relative', 
                                     zIndex: 1,
-                                    boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                                    boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
                                 }} 
                             />
+                            <div style={{
+                                position: 'absolute',
+                                bottom: '-10px',
+                                left: '-10px',
+                                width: '100px',
+                                height: '100px',
+                                borderLeft: '4px solid var(--primary-gold)',
+                                borderBottom: '4px solid var(--primary-gold)',
+                                borderRadius: '0 0 0 20px',
+                                zIndex: 2
+                            }}></div>
                         </div>
                     </Reveal>
                 </div>
@@ -59,28 +70,39 @@ export default function About() {
              <section className="section-tight" style={{ background: 'var(--bg-light)' }}>
                 <div className="grid-2" style={{ alignItems: 'center', gap: '4rem' }}>
                     <Reveal>
-                        <div style={{ position: 'relative' }}>
+                        <div style={{ position: 'relative', padding: '1rem' }}>
                             <div style={{
                                 position: 'absolute',
-                                top: '20px',
-                                left: '-20px',
-                                width: '100%',
-                                height: '100%',
-                                border: '2px solid var(--primary-gold)',
+                                bottom: '0',
+                                left: '0',
+                                width: '80%',
+                                height: '80%',
+                                background: 'rgba(197, 164, 115, 0.1)',
                                 borderRadius: '20px',
                                 zIndex: 0
                             }}></div>
                             <img 
-                                src="/images/rusd-heritage.png" 
+                                src="/images/rusd-heritage-new.png" 
                                 alt="The RUSD Connection" 
                                 style={{ 
                                     width: '100%', 
                                     borderRadius: '20px', 
                                     position: 'relative', 
                                     zIndex: 1,
-                                    boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                                    boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
                                 }} 
                             />
+                            <div style={{
+                                position: 'absolute',
+                                top: '-10px',
+                                right: '-10px',
+                                width: '100px',
+                                height: '100px',
+                                borderRight: '4px solid var(--primary-gold)',
+                                borderTop: '4px solid var(--primary-gold)',
+                                borderRadius: '0 20px 0 0',
+                                zIndex: 2
+                            }}></div>
                         </div>
                     </Reveal>
                     <Reveal delay={0.2}>
@@ -108,7 +130,7 @@ export default function About() {
 
                 <div className="grid-2" style={{ marginTop: '2rem', gap: '2rem' }}>
                     {[
-                        { title: "Ethical Conduct", desc: "Unwavering integrity in every interaction.", icon: ShieldCheck, isFeatured: true },
+                        { title: "Ethical Conduct", desc: "Unwavering integrity in every interaction.", icon: ShieldCheck },
                         { title: "Fairness", desc: "Equitable treatment of all stakeholders.", icon: Users },
                         { title: "Transparency", desc: "Clear communication and open processes.", icon: Eye },
                         { title: "Accountability", desc: "Responsibility for our actions and outcomes.", icon: CheckCircle }
@@ -116,18 +138,18 @@ export default function About() {
                         <Reveal key={index} delay={index * 0.1}>
                             <div style={{ 
                                 padding: '2rem', 
-                                background: item.isFeatured ? 'var(--bg-dark)' : 'white', 
+                                background: 'white', 
                                 borderRadius: '16px', 
-                                color: item.isFeatured ? 'white' : 'var(--text-on-light)', 
+                                color: 'var(--text-on-light)', 
                                 height: '100%',
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: '1.5rem',
-                                boxShadow: item.isFeatured ? '0 10px 30px rgba(0,0,0,0.2)' : '0 4px 15px rgba(0,0,0,0.05)',
-                                border: item.isFeatured ? 'none' : '1px solid rgba(0,0,0,0.05)'
+                                boxShadow: '0 4px 15px rgba(0,0,0,0.05)',
+                                border: '1px solid rgba(0,0,0,0.05)'
                             }}>
                                 <div style={{
-                                    background: item.isFeatured ? 'rgba(197, 164, 115, 0.2)' : 'rgba(197, 164, 115, 0.1)',
+                                    background: 'rgba(197, 164, 115, 0.1)',
                                     padding: '1rem',
                                     borderRadius: '12px',
                                     display: 'flex',
@@ -135,11 +157,11 @@ export default function About() {
                                     justifyContent: 'center',
                                     flexShrink: 0
                                 }}>
-                                    <item.icon size={32} color={item.isFeatured ? 'var(--primary-gold-dark)' : 'var(--primary-gold)'} strokeWidth={2.5} />
+                                    <item.icon size={32} color='var(--primary-gold)' strokeWidth={2.5} />
                                 </div>
                                 <div>
-                                    <h3 style={{ marginBottom: '0.5rem', fontSize: '1.25rem', fontWeight: item.isFeatured ? '800' : '700', color: item.isFeatured ? 'var(--primary-gold-dark)' : 'var(--primary-gold)' }}>{item.title}</h3>
-                                    <p style={{ opacity: item.isFeatured ? 0.9 : 1, fontSize: '0.95rem' }}>{item.desc}</p>
+                                    <h3 style={{ marginBottom: '0.5rem', fontSize: '1.25rem', fontWeight: '700', color: 'var(--primary-gold)' }}>{item.title}</h3>
+                                    <p style={{ fontSize: '0.95rem' }}>{item.desc}</p>
                                 </div>
                             </div>
                         </Reveal>

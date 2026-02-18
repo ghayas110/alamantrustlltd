@@ -21,7 +21,6 @@ export default function FundServicesPage() {
                 </div>
                 
                 <div className={styles.heroContent}>
-                    <div className={styles.heroNumber}>03</div>
                     <div className={styles.heroText}>
                         <div className={styles.serviceCategory}>INVESTMENT EXCELLENCE</div>
                         <h1 className={styles.pageTitle}>Fund Services</h1>
@@ -75,23 +74,19 @@ export default function FundServicesPage() {
             <section className={styles.servicesSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>Our Fund Services</h2>
-                    <div className={styles.sectionCount}>4 SPECIALIZED SOLUTIONS</div>
+
                 </div>
 
                 <div className={styles.serviceList}>
                     {/* Service 1 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>01</div>
-                            <div className={styles.indexTotal}>/ 04</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Private and Public Fund Set-up</h3>
                                 <p className={styles.serviceDescription}>
                                     End-to-end fund establishment covering structure selection, regulatory approval, and operational readiness for both private and public investment vehicles.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -108,17 +103,13 @@ export default function FundServicesPage() {
 
                     {/* Service 2 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>02</div>
-                            <div className={styles.indexTotal}>/ 04</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Fund Administration</h3>
                                 <p className={styles.serviceDescription}>
                                     Comprehensive middle and back-office services ensuring accurate fund accounting, valuation, and reporting to the highest professional standards.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -135,17 +126,13 @@ export default function FundServicesPage() {
 
                     {/* Service 3 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>03</div>
-                            <div className={styles.indexTotal}>/ 04</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Client Onboarding & Compliance</h3>
                                 <p className={styles.serviceDescription}>
                                     Robust investor onboarding, KYC/AML compliance, and ongoing monitoring aligned with international standards and regulatory requirements.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -162,17 +149,13 @@ export default function FundServicesPage() {
 
                     {/* Service 4 */}
                     <div className={styles.serviceItem}>
-                        <div className={styles.serviceIndex}>
-                            <div className={styles.indexNumber}>04</div>
-                            <div className={styles.indexTotal}>/ 04</div>
-                        </div>
                         <div className={styles.serviceContent}>
                             <div className={styles.serviceMain}>
                                 <h3>Company Secretary for Funds</h3>
                                 <p className={styles.serviceDescription}>
                                     Professional company secretarial services for fund vehicles ensuring corporate governance and full regulatory compliance.
                                 </p>
-                                <Link href="#" className={styles.serviceLink}>LEARN MORE →</Link>
+
                             </div>
                             <div className={styles.serviceFeatures}>
                                 <ul>
@@ -284,7 +267,6 @@ export default function FundServicesPage() {
                     
                     <div className={styles.ctaButtons}>
                         <Link href="/contact" className={styles.btnPrimary}>Schedule Consultation</Link>
-                        <Link href="#" className={styles.btnSecondary}>Download Fund Guide</Link>
                     </div>
                     
                     <div className={styles.contactInfo}>

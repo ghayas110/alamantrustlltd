@@ -3,6 +3,7 @@ import { Montserrat, Lato } from "next/font/google";
 import "./globals.css";
 import NavigationWrapper from "@/components/NavigationWrapper";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 
 const montserrat = Montserrat({ 
     subsets: ["latin"], 
@@ -35,6 +36,7 @@ export default function RootLayout({
                         <Footer />
                     </main>
                 </div>
+                <CookieConsent />
             </body>
         </html>
     );

@@ -55,10 +55,6 @@
 .heroContent {
     max-width: 1400px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 80px;
-    align-items: start;
 }
 
 .heroNumber {
@@ -264,9 +260,6 @@
 }
 
 .serviceItem {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 60px;
     padding: 60px 0;
     border-bottom: 1px solid var(--border);
     transition: all 0.4s ease;
@@ -362,7 +355,7 @@
 
 /* Process Timeline */
 .processSection {
-    padding: 100px 60px;
+    padding: 50px 60px;
     background: var(--navy);
     color: white;
 }
@@ -373,18 +366,18 @@
 }
 
 .processHeader {
-    margin-bottom: 80px;
+    margin-bottom: 32px;
 }
 
 .processHeader h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .processHeader p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 300;
     max-width: 600px;
@@ -398,13 +391,13 @@
 
 .timelineStep {
     position: relative;
-    padding-top: 60px;
+    padding-top: 48px;
 }
 
 .timelineStep::before {
     content: '';
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 0;
     right: 0;
     height: 1px;
@@ -419,8 +412,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: var(--gold);
     color: var(--navy);
     border-radius: 50%;
@@ -428,20 +421,20 @@
     align-items: center;
     justify-content: center;
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
 .stepTitle {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .stepDescription {
-    font-size: 0.938rem;
+    font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.7);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* Why Choose Section */
@@ -604,14 +597,7 @@
         padding: 60px 24px;
     }
 
-    .heroContent {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
 
-    .heroNumber {
-        font-size: 6rem;
-    }
 
     .pageTitle {
         font-size: 2.5rem;
@@ -650,8 +636,6 @@
     }
 
     .serviceItem {
-        grid-template-columns: 1fr;
-        gap: 24px;
         padding: 40px 0;
     }
 
@@ -660,17 +644,7 @@
         padding: 40px 24px;
     }
 
-    .serviceIndex {
-        text-align: left;
-        display: flex;
-        align-items: baseline;
-        gap: 12px;
-    }
 
-    .indexNumber {
-        font-size: 2rem;
-        margin-bottom: 0;
-    }
 
     .serviceContent {
         grid-template-columns: 1fr;
