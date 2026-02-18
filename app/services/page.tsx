@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import styles from "./services.module.css";
 
 export const metadata: Metadata = {
-    title: 'Services | Al Aman Trust',
+    title: 'Services | Al-Aman Trust',
 };
 
 export default function Services() {

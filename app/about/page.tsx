@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { ShieldCheck, Users, Eye, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: 'About | Al Aman Trust',
-    description: 'Learn about Al Aman Trust Services, a licensed managed trust company in Labuan, Malaysia, backed by the RUSD Group.',
+    title: 'About | Al-Aman Trust',
+    description: 'Learn about Al-Aman Trust Services, a licensed managed trust company in Labuan, Malaysia, backed by the RUSD Group.',
 };
 
 export default function About() {
@@ -19,7 +19,7 @@ export default function About() {
                         </div>
                         <h3 className="serif" style={{ marginBottom: '2rem' }}>Built on <span className="gold">Trust</span>, Backed by <span className="gold">Strength</span></h3>
                         <p style={{ marginBottom: '1.75rem' }}>
-                            Al Aman Trust Services is a licensed managed trust company dedicated to providing bespoke solutions in today's evolving business landscape. Based in the premier midshore jurisdiction of Labuan, Malaysia, we are regulated by the Labuan Financial Services Authority (Labuan FSA).
+                            Al-Aman Trust Services is a licensed managed trust company dedicated to providing bespoke solutions in today's evolving business landscape. Based in the premier midshore jurisdiction of Labuan, Malaysia, we are regulated by the Labuan Financial Services Authority (Labuan FSA).
                         </p>
                         <p style={{ marginBottom: '1.75rem' }}>
                             We operate as a wholly owned subsidiary of Rusd Investment Bank Inc., a premier Islamic investment bank, and are a proud member of the RUSD Group. This affiliation allows us to combine local expertise with the global strength and ethical foundations of a leading international conglomerate.
@@ -42,7 +42,7 @@ export default function About() {
                             }}></div>
                             <img 
                                 src="/images/business-soft-landing-home.png" 
-                                alt="Al Aman Trust" 
+                                alt="Al-Aman Trust" 
                                 style={{ 
                                     width: '100%', 
                                     borderRadius: '20px', 
@@ -89,7 +89,7 @@ export default function About() {
                             The RUSD Group, headquartered in Saudi Arabia, has been a pioneer in Shariah-compliant services since 2002. The name "RUSD" reflects a commitment to reviving flexible Islamic economic jurisprudence for the modern era—bridging the gap between tradition and innovation. 
                         </p>
                         <p>
-                            At Al Aman, we carry this legacy forward by ensuring all our operations adhere to the highest standards of corporate governance, ethical conduct, and transparency.
+                            At Al-Aman, we carry this legacy forward by ensuring all our operations adhere to the highest standards of corporate governance, ethical conduct, and transparency.
                         </p>
                     </Reveal>
                 </div>
@@ -155,7 +155,7 @@ export default function About() {
             <section className="section-tight" style={{ background: 'var(--bg-light)' }}>
                 <div className="section-header" style={{ maxWidth: '100%' }}>
                     <Reveal>
-                        <h2 className="serif">Why Choose <span className="gold">Al Aman Trust Services</span></h2>
+                        <h2 className="serif">Why Choose <span className="gold">Al-Aman Trust Services</span></h2>
                     </Reveal>
                 </div>
                 
@@ -185,7 +185,7 @@ export default function About() {
                 </div>
                 <div style={{ marginTop: '3rem', textAlign: 'left', paddingLeft: '1.5rem', borderLeft: '3px solid var(--primary-gold-dark)' }}>
                     <Reveal>
-                        <p style={{ fontStyle: 'italic', fontSize: '1.1rem', color: 'var(--text-on-light)', margin: 0 }}>"Al Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance, transparency, and client care."</p>
+                        <p style={{ fontStyle: 'italic', fontSize: '1.1rem', color: 'var(--text-on-light)', margin: 0 }}>"Al-Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance, transparency, and client care."</p>
                     </Reveal>
                 </div>
             </section>

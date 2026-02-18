@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../../styles/service-pages.module.css';
 
 export const metadata = {
-    title: 'Corporate Services | Al Aman Trust Services',
+    title: 'Corporate Services | Al-Aman Trust Services',
     description: 'Comprehensive corporate services in Labuan including company formation, compliance, accounting, and soft-landing solutions.',
 };
 
@@ -38,7 +38,7 @@ export default function CorporateSolutionsPage() {
                     <div className={styles.overviewGrid}>
                         <div className={styles.overviewText}>
                             <p>
-                                Your business ambitions deserve more than standard solutions. At Al Aman Trust Services, we deliver bespoke corporate strategies that reflect your values and long-term vision, all grounded in Shariah compliance and regulatory excellence.
+                                Your business ambitions deserve more than standard solutions. At Al-Aman Trust Services, we deliver bespoke corporate strategies that reflect your values and long-term vision, all grounded in Shariah compliance and regulatory excellence.
                             </p>
                             <br />
                             <p>
@@ -318,7 +318,7 @@ export default function CorporateSolutionsPage() {
             <section className={styles.whyChoose}>
                 <div className={styles.whyGrid}>
                     <div className={styles.whyContent}>
-                        <h2>Why Choose Al Aman for Corporate Services</h2>
+                        <h2>Why Choose Al-Aman for Corporate Services</h2>
                         <p className={styles.whyText}>
                             We combine deep local expertise with international best practices, ensuring your business operates efficiently while maintaining full compliance with Labuan&apos;s regulatory framework.
                         </p>

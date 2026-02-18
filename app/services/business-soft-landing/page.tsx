@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../../styles/service-pages.module.css';
 
 export const metadata = {
-    title: 'Business Support & Soft-Landing Services | Al Aman Trust Services',
+    title: 'Business Support & Soft-Landing Services | Al-Aman Trust Services',
     description: 'Market entry and soft-landing services for expanding into Saudi Arabia, UAE, and Malaysia (Labuan IBFC).',
 };
 
@@ -209,7 +209,7 @@ export default function SoftLandingServicesPage() {
             <section className={styles.whyChoose}>
                 <div className={styles.whyGrid}>
                     <div className={styles.whyContent}>
-                        <h2>Why Choose Al Aman for Market Entry</h2>
+                        <h2>Why Choose Al-Aman for Market Entry</h2>
                         <p className={styles.whyText}>
                             We combine local presence with international best practices, ensuring your market entry is executed efficiently while maintaining full compliance across all jurisdictions.
                         </p>

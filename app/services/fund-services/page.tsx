@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../../styles/service-pages.module.css';
 
 export const metadata = {
-    title: 'Fund Services | Al Aman Trust Services',
+    title: 'Fund Services | Al-Aman Trust Services',
     description: 'Professional fund administration services in Labuan including fund setup, NAV calculation, and compliance.',
 };
 
@@ -38,7 +38,7 @@ export default function FundServicesPage() {
                     <div className={styles.overviewGrid}>
                         <div className={styles.overviewText}>
                             <p>
-                                Your investment strategy deserves exceptional operational support. At Al Aman Trust Services, we deliver comprehensive fund administration that combines technical expertise with regulatory precision.
+                                Your investment strategy deserves exceptional operational support. At Al-Aman Trust Services, we deliver comprehensive fund administration that combines technical expertise with regulatory precision.
                             </p>
                             <br />
                             <p>
@@ -237,7 +237,7 @@ export default function FundServicesPage() {
             <section className={styles.whyChoose}>
                 <div className={styles.whyGrid}>
                     <div className={styles.whyContent}>
-                        <h2>Why Choose Al Aman for Fund Services</h2>
+                        <h2>Why Choose Al-Aman for Fund Services</h2>
                         <p className={styles.whyText}>
                             We combine technical fund administration expertise with deep regulatory knowledge and Shariah compliance capabilities, delivering operational excellence for institutional fund managers.
                         </p>

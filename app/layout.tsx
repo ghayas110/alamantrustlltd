@@ -11,7 +11,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-    title: "Al Aman Trust",
+    title: "Al-Aman Trust",
     description: "Excellence in ethical consulting.",
 };
 

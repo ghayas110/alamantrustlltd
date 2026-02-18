@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../../styles/service-pages.module.css';
 
 export const metadata = {
-    title: 'Private Client Services | Al Aman Trust Services',
+    title: 'Private Client Services | Al-Aman Trust Services',
     description: 'Bespoke private client services including wealth planning, trusts, foundations, and family office solutions.',
 };
 
@@ -38,7 +38,7 @@ export default function PrivateClientAdvisoryPage() {
                     <div className={styles.overviewGrid}>
                         <div className={styles.overviewText}>
                             <p>
-                                Your wealth deserves more than standard planning. At Al Aman Trust Services, we deliver bespoke private client solutions that align with your values, protect your assets, and honor your family&apos;s legacy through generations.
+                                Your wealth deserves more than standard planning. At Al-Aman Trust Services, we deliver bespoke private client solutions that align with your values, protect your assets, and honor your family&apos;s legacy through generations.
                             </p>
                             <br />
                             <p>
@@ -291,7 +291,7 @@ export default function PrivateClientAdvisoryPage() {
             <section className={styles.whyChoose}>
                 <div className={styles.whyGrid}>
                     <div className={styles.whyContent}>
-                        <h2>Why Choose Al Aman for Private Client Services</h2>
+                        <h2>Why Choose Al-Aman for Private Client Services</h2>
                         <p className={styles.whyText}>
                             We combine deep expertise in wealth preservation with an unwavering commitment to confidentiality, Shariah compliance, and your family&apos;s unique values and vision.
                         </p>

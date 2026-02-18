@@ -23,8 +23,19 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar-header">
-                    <Link href="/" className="logo" onClick={onClose}>
-                        <span className="gold">AL AMAN</span> TRUST
+                    <Link href="/" className="logo-wrapper" onClick={onClose}>
+                        <div className="logo-icon-container" style={{ width: '50px', height: '50px' }}>
+                            <img 
+                                src="/logo.png" 
+                                alt="Al-Aman Trust Logo" 
+                                className="logo-icon"
+                                style={{ transform: 'scale(1.4)' }}
+                            />
+                        </div>
+                        <div className="logo-text">
+                            <span className="brand-name" style={{ fontSize: '1.4rem' }}>Al-Aman</span>
+                            <span className="brand-subtext" style={{ fontSize: '0.6rem' }}>Trust Services Limited</span>
+                        </div>
                     </Link>
                     <button className="mobile-close" onClick={onClose} aria-label="Close menu">
                         <X size={24} />
@@ -62,7 +73,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                 </nav>
 
                 <div className="sidebar-footer">
-                    <p>&copy; {new Date().getFullYear()} Al Aman Trust</p>
+                    <p>&copy; {new Date().getFullYear()} Al-Aman Trust</p>
                 </div>
             </aside>
         </>
