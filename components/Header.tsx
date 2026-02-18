@@ -63,7 +63,7 @@ export default function Header() {
                 </nav>
 
                 <div className="header-actions">
-                    <Link href="/contact" className="btn btn-sm hide-mobile">Get Started</Link>
+                    <Link href="/contact" className="btn btn-sm hide-mobile">Connect Me</Link>
                     <button 
                         className="mobile-toggle" 
                         onClick={() => setIsMenuOpen(!isMenuOpen)}

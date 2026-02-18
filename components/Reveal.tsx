@@ -4,9 +4,10 @@ import { useEffect, useRef, ReactNode } from 'react';
 interface RevealProps {
     children: ReactNode;
     delay?: number;
+    className?: string;
 }
 
-export default function Reveal({ children, delay = 0 }: RevealProps) {
+export default function Reveal({ children, delay = 0, className = "" }: RevealProps) {
     const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -36,7 +37,7 @@ export default function Reveal({ children, delay = 0 }: RevealProps) {
     return (
         <div
             ref={ref}
-            className="animate-on-scroll"
+            className={`animate-on-scroll ${className}`}
             style={{ transitionDelay: `${delay}s` }}
         >
             {children}

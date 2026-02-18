@@ -9,7 +9,7 @@
     --text-light: #6B7280;
     --border: #E5E7EB;
 
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     background: var(--cream);
     color: var(--text);
     line-height: 1.6;
@@ -61,7 +61,7 @@
 }
 
 .heroNumber {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 10rem;
     font-weight: 900;
     color: rgba(201, 169, 97, 0.15);
@@ -82,7 +82,7 @@
 }
 
 .pageTitle {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 4.5rem;
     font-weight: 700;
     color: var(--navy);
@@ -150,7 +150,7 @@
 }
 
 .statNumber {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--navy);
@@ -174,7 +174,7 @@
 }
 
 .marketsIntro h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--navy);
@@ -214,7 +214,7 @@
 }
 
 .marketName {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.75rem;
     font-weight: 700;
     color: var(--navy);
@@ -244,7 +244,7 @@
 }
 
 .sectionTitle {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--navy);
@@ -282,7 +282,7 @@
 }
 
 .indexNumber {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 3rem;
     font-weight: 700;
     color: var(--gold);
@@ -302,7 +302,7 @@
 }
 
 .serviceMain h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 2rem;
     font-weight: 700;
     color: var(--navy);
@@ -376,7 +376,7 @@
 }
 
 .processHeader h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 24px;
@@ -426,7 +426,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -458,7 +458,7 @@
 }
 
 .whyContent h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 3rem;
     font-weight: 700;
     color: var(--navy);
@@ -513,7 +513,7 @@
 }
 
 .ctaTitle {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 3rem;
     font-weight: 700;
     color: var(--navy);

@@ -41,7 +41,7 @@
 }
 
 .heroNumber {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-heading), serif;
     font-size: 12rem;
     font-weight: 900;
     color: rgba(201, 169, 97, 0.15);
@@ -51,7 +51,7 @@
 }
 
 .heroTitle {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-heading), serif;
     font-size: 4.5rem;
     font-weight: 700;
     color: white;
@@ -103,7 +103,7 @@
 }
 
 .statNumber {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-heading), serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: #0F1419;
@@ -165,7 +165,7 @@
 }
 
 .sectionTitle {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-heading), serif;
     font-size: 3.5rem;
     font-weight: 700;
     color: #0F1419;
@@ -206,7 +206,7 @@
 }
 
 .serviceNumberSmall {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-heading), serif;
     font-size: 1rem;
     color: #C9A961;
     /* --gold */
@@ -215,7 +215,7 @@
 }
 
 .serviceTitleAlt {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-heading), serif;
     font-size: 2.25rem;
     font-weight: 700;
     color: #0F1419;
@@ -274,7 +274,7 @@
 }
 
 .footerCtaTitle {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-heading), serif;
     font-size: 3rem;
     color: white;
     margin-bottom: 24px;

@@ -19,6 +19,10 @@
     --p-size: 1rem;
     --p-lg-size: 1.125rem;
 
+    /* Font Families */
+    --font-heading: var(--font-montserrat), "Montserrat", sans-serif;
+    --font-body: var(--font-lato), "Lato", sans-serif;
+
     /* Spacing */
     --section-padding: 6rem 10%;
     --section-tight-padding: 4rem 10%;
@@ -38,7 +42,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     color: var(--text-on-light);
     background-color: var(--bg-light);
     line-height: 1.8;
@@ -52,7 +56,7 @@ h2,
 h3,
 h4,
 .serif {
-    font-family: var(--font-playfair), serif;
+    font-family: var(--font-heading);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -257,6 +261,11 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+}
+
+.desktop-nav {
+    margin-left: auto;
 }
 
 .desktop-nav ul {

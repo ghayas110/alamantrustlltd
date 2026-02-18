@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Montserrat, Lato } from "next/font/google";
 import "./globals.css";
 import NavigationWrapper from "@/components/NavigationWrapper";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({
+const montserrat = Montserrat({ 
+    subsets: ["latin"], 
+    weight: ["700"],
+    variable: "--font-montserrat" 
+});
+const lato = Lato({
     subsets: ["latin"],
-    variable: "--font-playfair",
+    weight: ["400", "700"],
+    variable: "--font-lato",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +27,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
+            <body suppressHydrationWarning className={`${lato.variable} ${montserrat.variable}`}>
                 <div className="app-container">
                     <NavigationWrapper />
                     <main className="main-content">

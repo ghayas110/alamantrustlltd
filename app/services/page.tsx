@@ -129,7 +129,7 @@ export default function Services() {
             {/* Footer CTA */}
             <section className={styles.footerCta}>
                 <Reveal>
-                    <h2 className={styles.footerCtaTitle}>Ready to Get Started?</h2>
+                    <h2 className={styles.footerCtaTitle}>Ready to Connect?</h2>
                     <p className={styles.footerCtaText}>Let's discuss how our Shariah-compliant solutions can serve your unique objectives.</p>
                     <a href="/contact" className={styles.footerBtn}>SCHEDULE CONSULTATION</a>
                 </Reveal>
