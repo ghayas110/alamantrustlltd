@@ -141,7 +141,6 @@ export default function About() {
                                 background: 'white', 
                                 borderRadius: '16px', 
                                 color: 'var(--text-on-light)', 
-                                height: '100%',
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: '1.5rem',
@@ -169,7 +168,7 @@ export default function About() {
                 </div>
                  <div style={{ marginTop: '3rem', textAlign: 'left', paddingLeft: '1.5rem', borderLeft: '3px solid var(--primary-gold-dark)' }}>
                      <Reveal>
-                        <p style={{ fontStyle: 'italic', fontSize: '1.1rem', color: 'var(--text-on-light)', margin: 0 }}>"These principles guide our day-to-day operations and ensure that trust remains at the heart of everything we do."</p>
+                        <p style={{ fontSize: '1.1rem', color: 'var(--text-on-light)', margin: 0 }}>These principles guide our day-to-day operations and ensure that trust remains at the heart of everything we do.</p>
                     </Reveal>
                  </div>
             </section>
@@ -207,7 +206,7 @@ export default function About() {
                 </div>
                 <div style={{ marginTop: '3rem', textAlign: 'left', paddingLeft: '1.5rem', borderLeft: '3px solid var(--primary-gold-dark)' }}>
                     <Reveal>
-                        <p style={{ fontStyle: 'italic', fontSize: '1.1rem', color: 'var(--text-on-light)', margin: 0 }}>"Al-Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance, transparency, and client care."</p>
+                        <p style={{ fontSize: '1.1rem', color: 'var(--text-on-light)', margin: 0 }}>Al-Aman Trust Services Limited is committed to delivering excellence in trust and corporate services while upholding the highest standards of governance, transparency, and client care.</p>
                     </Reveal>
                 </div>
             </section>

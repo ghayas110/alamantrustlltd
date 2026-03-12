@@ -31,7 +31,7 @@ export default function Contact() {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="phone">Phone number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+123 456 789" />
+                                <input type="tel" id="phone" name="phone" required placeholder="+123 456 789" />
                             </div>
                         </div>
                         <div className="form-group">
@@ -49,35 +49,21 @@ export default function Contact() {
                 <Reveal delay={0.1}>
                     <div style={{ marginBottom: '3rem' }}>
                         <h3 className="serif gold" style={{ marginBottom: '1rem' }}>Our Office</h3>
-                        <p>Riyadh, 01, SA</p>
-                        <p>Saudi Arabia</p>
+                        <p>Kensington Gardens, No. U1317, Lot 7616,</p>
+                        <p>Jalan Jumidar Buyong, 87000 Federal Territory</p>
+                        <p>of Labuan, Malaysia</p>
                     </div>
-                    <div style={{ marginBottom: '3rem' }}>
+                    <div style={{ marginBottom: '4rem' }}>
                         <h3 className="serif gold" style={{ marginBottom: '1rem' }}>Direct Contact</h3>
-                        <p>Email: <a href="mailto:rizwan@rusdbank.com" style={{ color: 'inherit', textDecoration: 'none' }}>rizwan@rusdbank.com</a></p>
-                        <p>Phone: +6087452100</p>
-                    </div>
-                    <div>
-                        <h3 className="serif gold" style={{ marginBottom: '1rem' }}>Business Hours</h3>
-                        <table style={{ width: '100%', fontSize: '0.95rem', borderCollapse: 'collapse' }}>
-                            <tbody>
-                                <tr style={{ borderBottom: '1px solid #E4E4E7' }}>
-                                    <td style={{ padding: '0.5rem 0' }}>Mon – Fri</td>
-                                    <td style={{ textAlign: 'right' }}>9:00am – 10:00pm</td>
-                                </tr>
-                                <tr style={{ borderBottom: '1px solid #E4E4E7' }}>
-                                    <td style={{ padding: '0.5rem 0' }}>Sat</td>
-                                    <td style={{ textAlign: 'right' }}>9:00am – 6:00pm</td>
-                                </tr>
-                                <tr style={{ borderBottom: '1px solid #E4E4E7' }}>
-                                    <td style={{ padding: '0.5rem 0' }}>Sun</td>
-                                    <td style={{ textAlign: 'right' }}>9:00am – 12:00pm</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <p>Email: <a href="mailto:info@alamantrust.com" style={{ color: 'inherit', textDecoration: 'none' }}>info@alamantrust.com</a></p>
+                        <p>Tel: +60 87 599800 / +60 87 452100</p>
+                        <p>Fax: +60 87 420989</p>
                     </div>
                 </Reveal>
             </div>
+            
+            {/* Added space at the bottom as requested */}
+            <div style={{ paddingBottom: '8rem' }}></div>
         </section>
     );
 }

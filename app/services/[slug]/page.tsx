@@ -202,9 +202,14 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                                 Whether you're establishing a new entity, preserving family wealth, launching an investment fund, or expanding into new markets, Al Aman Trust Services delivers the expertise and support you need.
                             </p>
                             <div style={{ display: "flex", flexDirection: "column", gap: "1rem", alignItems: "center" }}>
-                                <Link href="/contact" className="btn">
-                                    Schedule a Consultation
-                                </Link>
+                                <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}>
+                                    <Link href="/contact" className="btn">
+                                        Schedule a Consultation
+                                    </Link>
+                                    <Link href="/services" className="btn" style={{ background: "transparent", color: "var(--navy)", border: "2px solid var(--navy)" }}>
+                                        Explore All Services
+                                    </Link>
+                                </div>
                                 <div style={{ fontSize: "0.9rem", marginTop: "1rem", opacity: 0.8 }}>
                                     <p>Contact us to explore how our Shariah-compliant solutions can serve your unique objectives.</p>
                                 </div>

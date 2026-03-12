@@ -28,18 +28,18 @@ export default function Footer() {
                 <div className="footer-column">
                     <h4>Services</h4>
                     <ul className="footer-links">
-                        <li><Link href="/services/corporate">Corporate Services</Link></li>
-                        <li><Link href="/services/private-client">Private Client Services</Link></li>
+                        <li><Link href="/services/corporate-solutions">Corporate Services</Link></li>
+                        <li><Link href="/services/private-client-advisory">Private Client Services</Link></li>
                         <li><Link href="/services/fund-services">Fund Services</Link></li>
-                        <li><Link href="/services/business-support">Business Support</Link></li>
+                        <li><Link href="/services/business-soft-landing">Business Support</Link></li>
                     </ul>
                 </div>
 
                 <div className="footer-column footer-contact">
                     <h4>Get in touch</h4>
-                    <p><MapPin size={18} className="gold" /> Riyadh, Saudi Arabia</p>
-                    <p><Phone size={18} className="gold" /> +6087452100</p>
-                    <p><Mail size={18} className="gold" /> info@alamantrust.com</p>
+                    <p><MapPin size={18} className="gold" style={{ flexShrink: 0, marginTop: '4px' }} /> <span>Kensington Gardens, No. U1317, Lot 7616,<br/>Jalan Jumidar Buyong, 87000 Federal Territory<br/>of Labuan, Malaysia</span></p>
+                    <p><Phone size={18} className="gold" style={{ flexShrink: 0 }} /> <span>Tel: +60 87 599800 / +60 87 452100<br/>Fax: +60 87 420989</span></p>
+                    <p><Mail size={18} className="gold" style={{ flexShrink: 0 }} /> info@alamantrust.com</p>
                 </div>
             </div>
 

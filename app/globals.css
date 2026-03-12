@@ -140,8 +140,8 @@ h3 {
 }
 
 .logo-icon-container {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -151,8 +151,8 @@ h3 {
 }
 
 .scrolled .logo-icon-container {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 
 .logo-icon {
@@ -171,7 +171,7 @@ h3 {
 }
 
 .brand-name {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: #224C41;
     line-height: 1;
@@ -180,7 +180,7 @@ h3 {
 }
 
 .brand-subtext {
-    font-size: 0.60rem;
+    font-size: 0.75rem;
     color: var(--primary-gold-dark);
     font-weight: 600;
     text-transform: uppercase;
@@ -1100,6 +1100,39 @@ h3 {
     -webkit-backdrop-filter: blur(4px);
     z-index: 10000;
     animation: cookieFadeIn 0.3s ease forwards;
+}
+
+.cookie-trigger {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--bg-dark);
+    color: var(--primary-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid rgba(197, 164, 115, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 9998;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cookie-trigger:hover {
+    transform: scale(1.1) rotate(15deg);
+    background: var(--primary-gold);
+    color: #fff;
+    border-color: var(--primary-gold);
+}
+
+@media (max-width: 768px) {
+    .cookie-trigger {
+        bottom: 1.5rem;
+        left: 1.5rem;
+    }
 }
 
 /* Cookie Settings Modal */

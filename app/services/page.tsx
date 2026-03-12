@@ -122,16 +122,7 @@ export default function Services() {
                 </div>
             </section>
 
-            {/* Get in Touch CTA */}
-            <section className={styles.ctaBanner}>
-                <div className={styles.ctaOverlay}>
-                    <Reveal>
-                        <h2 className={styles.ctaTitle}>Get in touch</h2>
-                        <p className={styles.ctaSubtitle}>Explore shariah-compliant solutions</p>
-                        <a href="/contact" className={styles.ctaBtn}>Get in touch</a>
-                    </Reveal>
-                </div>
-            </section>
+
         </div>
     );
 }

@@ -24,7 +24,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar-header">
                     <Link href="/" className="logo-wrapper" onClick={onClose}>
-                        <div className="logo-icon-container" style={{ width: '50px', height: '50px' }}>
+                        <div className="logo-icon-container" style={{ width: '60px', height: '60px' }}>
                             <img 
                                 src="/logo.png" 
                                 alt="Al-Aman Trust Logo" 
@@ -33,8 +33,8 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                             />
                         </div>
                         <div className="logo-text">
-                            <span className="brand-name" style={{ fontSize: '1.4rem' }}>Al-Aman</span>
-                            <span className="brand-subtext" style={{ fontSize: '0.6rem' }}>Trust Services Limited</span>
+                            <span className="brand-name" style={{ fontSize: '1.6rem' }}>Al-Aman</span>
+                            <span className="brand-subtext" style={{ fontSize: '0.75rem' }}>Trust Services Limited</span>
                         </div>
                     </Link>
                     <button className="mobile-close" onClick={onClose} aria-label="Close menu">

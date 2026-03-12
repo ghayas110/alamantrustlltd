@@ -60,10 +60,7 @@ export default function CorporateSolutionsPage() {
                                     <div className={styles.statNumber}>15+</div>
                                     <div className={styles.statLabel}>Years Experience</div>
                                 </div>
-                                <div className={styles.statItem}>
-                                    <div className={styles.statNumber}>24/7</div>
-                                    <div className={styles.statLabel}>Support Available</div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -73,7 +70,7 @@ export default function CorporateSolutionsPage() {
             {/* Services List */}
             <section className={styles.servicesSection}>
                 <div className={styles.sectionHeader}>
-                    <h2 className={styles.sectionTitle}>Corporate Set-ups</h2>
+                    <h2 className={styles.sectionTitle}>Service Categories</h2>
                 </div>
 
                 <div className={styles.serviceList}>
@@ -335,20 +332,25 @@ export default function CorporateSolutionsPage() {
                     
                     <div className={styles.ctaButtons}>
                         <Link href="/contact" className={styles.btnPrimary}>Schedule Consultation</Link>
+                        <Link href="/services" className={styles.btnSecondary}>Explore All Services</Link>
                     </div>
                     
                     <div className={styles.contactInfo}>
                         <div className={styles.contactItem}>
                             <div className={styles.contactLabel}>Email</div>
-                            <div className={styles.contactValue}>corporate@alamantrust.com</div>
+                            <div className={styles.contactValue}>info@alamantrust.com</div>
                         </div>
                         <div className={styles.contactItem}>
                             <div className={styles.contactLabel}>Phone</div>
-                            <div className={styles.contactValue}>+60 123 456 789</div>
+                            <div className={styles.contactValue} style={{ fontSize: '0.9rem' }}>+60 87 599800 / +60 87 452100</div>
                         </div>
                         <div className={styles.contactItem}>
                             <div className={styles.contactLabel}>Location</div>
-                            <div className={styles.contactValue}>Labuan IBFC, Malaysia</div>
+                            <div className={styles.contactValue}>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Kensington+Gardens,+No.+U1317,+Lot+7616,+Jalan+Jumidar+Buyong,+87000+Federal+Territory+of+Labuan,+Malaysia" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
+                                    Labuan IBFC, Malaysia
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
