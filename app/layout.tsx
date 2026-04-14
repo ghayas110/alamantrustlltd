@@ -4,6 +4,7 @@ import "./globals.css";
 import NavigationWrapper from "@/components/NavigationWrapper";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import { AuthProvider } from "@/components/AuthProvider";
 
 const montserrat = Montserrat({ 
     subsets: ["latin"], 
@@ -29,14 +30,16 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body suppressHydrationWarning className={`${lato.variable} ${montserrat.variable}`}>
-                <div className="app-container">
-                    <NavigationWrapper />
-                    <main className="main-content">
-                        {children}
-                        <Footer />
-                    </main>
-                </div>
-                <CookieConsent />
+                <AuthProvider>
+                    <div className="app-container">
+                        <NavigationWrapper />
+                        <main className="main-content">
+                            {children}
+                            <Footer />
+                        </main>
+                    </div>
+                    <CookieConsent />
+                </AuthProvider>
             </body>
         </html>
     );

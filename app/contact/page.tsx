@@ -1,12 +1,19 @@
 import Reveal from "@/components/Reveal";
 import type { Metadata } from "next";
 import styles from "./contact.module.css";
+import { getCMSContent } from "@/app/actions/cms";
 
 export const metadata: Metadata = {
     title: 'Contact | Al-Aman Trust',
 };
 
-export default function Contact() {
+export default async function Contact() {
+    const contactInfo = await getCMSContent("contact", "info", { 
+        address: "Kensington Gardens, No. U1317, Lot 7616,\nJalan Jumidar Buyong, 87000 Federal Territory\nof Labuan, Malaysia", 
+        email: "info@alamantrust.com", 
+        phone: "+60 87 599800 / +60 87 452100\nFax: +60 87 420989" 
+    });
+
     return (
         <section className={styles.contactSection}>
             <div className="section-header">
@@ -49,15 +56,12 @@ export default function Contact() {
                 <Reveal delay={0.1}>
                     <div style={{ marginBottom: '3rem' }}>
                         <h3 className="serif gold" style={{ marginBottom: '1rem' }}>Our Office</h3>
-                        <p>Kensington Gardens, No. U1317, Lot 7616,</p>
-                        <p>Jalan Jumidar Buyong, 87000 Federal Territory</p>
-                        <p>of Labuan, Malaysia</p>
+                        <p style={{ whiteSpace: 'pre-line' }}>{contactInfo.address}</p>
                     </div>
                     <div style={{ marginBottom: '4rem' }}>
                         <h3 className="serif gold" style={{ marginBottom: '1rem' }}>Direct Contact</h3>
-                        <p>Email: <a href="mailto:info@alamantrust.com" style={{ color: 'inherit', textDecoration: 'none' }}>info@alamantrust.com</a></p>
-                        <p>Tel: +60 87 599800 / +60 87 452100</p>
-                        <p>Fax: +60 87 420989</p>
+                        <p>Email: <a href={`mailto:${contactInfo.email}`} style={{ color: 'inherit', textDecoration: 'none' }}>{contactInfo.email}</a></p>
+                        <p style={{ whiteSpace: 'pre-line' }}>Tel: {contactInfo.phone}</p>
                     </div>
                 </Reveal>
             </div>

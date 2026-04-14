@@ -1,7 +1,16 @@
+"use client";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Twitter, Facebook, Linkedin, ArrowUpRight, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
+    const pathname = usePathname();
+    
+    // Completely decouple generic website footer from Admin application
+    if (pathname?.startsWith('/admin')) {
+        return null;
+    }
+
     return (
         <footer className="site-footer">
             <div className="footer-columns">

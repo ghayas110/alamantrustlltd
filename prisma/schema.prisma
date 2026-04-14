@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  role      String   @default("ADMIN")
+  createdAt DateTime @default(now())
+}
+
+model Client {
+  id        Int           @id @default(autoincrement())
+  firstName String
+  lastName  String
+  email     String?
+  phone     String?
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  assets    ClientAsset[]
+}
+
+model ClientAsset {
+  id         Int      @id @default(autoincrement())
+  clientId   Int
+  fileName   String
+  filePath   String
+  fileType   String
+  uploadedAt DateTime @default(now())
+  client     Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+}
+
+model CMSContent {
+  id          Int      @id @default(autoincrement())
+  pageName    String
+  sectionKey  String
+  contentJson Json
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([pageName, sectionKey])
+}

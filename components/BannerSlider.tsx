@@ -21,6 +21,12 @@ interface BannerSliderProps {
     slides: Slide[];
 }
 
+// Converts "text" into gold-highlighted <span> and preserves existing HTML
+function processHighlights(text: string): string {
+    if (text.includes('gold-light')) return text;
+    return text.replace(/"([^"]+)"/g, '<span class="gold-light">$1</span>');
+}
+
 export default function BannerSlider({ slides }: BannerSliderProps) {
     return (
         <section 
@@ -98,7 +104,7 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                                 style={{
                                     position: 'absolute',
                                     inset: 0,
-                                    background: 'linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.55))',
+                                    background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6))',
                                 }}
                             />
 
@@ -112,12 +118,12 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                     zIndex: 10,
+                                    padding: '0 8%',
                                 }}
                             >
                                 <div style={{
                                     width: '100%',
                                     maxWidth: '1400px',
-                                    padding: '0 5%',
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'flex-start',
@@ -129,23 +135,23 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                                             style={{
                                                 color: '#fff',
                                                 fontSize: 'clamp(2.5rem, 6vw, 5rem)',
-                                                fontFamily: 'var(--font-montserrat), \'Montserrat\', sans-serif',
+                                                fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
                                                 fontWeight: 700,
                                                 lineHeight: 1.1,
                                                 maxWidth: '900px',
                                                 marginBottom: '1.5rem',
                                             }}
-                                            dangerouslySetInnerHTML={{ __html: slide.title }}
+                                            dangerouslySetInnerHTML={{ __html: processHighlights(slide.title) }}
                                         />
                                     )}
-                                      {slide.subtitle && (
+                                    {slide.subtitle && (
                                         <p
                                             style={{
                                                 color: '#D4AF37',
                                                 textTransform: 'uppercase',
                                                 letterSpacing: '0.35em',
                                                 fontSize: 'clamp(0.75rem, 1.5vw, 1rem)',
-                                                marginBottom: '1rem',
+                                                marginBottom: '0.75rem',
                                                 fontWeight: 500,
                                             }}
                                         >
@@ -171,39 +177,51 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                 className="banner-prev"
                 style={{
                     position: 'absolute',
-                    left: '2rem',
+                    left: '2.5rem',
                     top: '50%',
                     transform: 'translateY(-50%)',
                     zIndex: 20,
-                    background: 'rgba(0,0,0,0.3)',
-                    border: 'none',
+                    background: 'rgba(0,0,0,0.35)',
+                    border: '1px solid rgba(255,255,255,0.15)',
                     borderRadius: '50%',
-                    padding: '1rem',
+                    width: '56px',
+                    height: '56px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     cursor: 'pointer',
                     color: '#fff',
                     transition: 'all 0.3s',
+                    backdropFilter: 'blur(4px)',
+                    padding: 0,
                 }}
             >
-                <ChevronLeft size={32} />
+                <ChevronLeft size={28} />
             </button>
             <button
                 className="banner-next"
                 style={{
                     position: 'absolute',
-                    right: '2rem',
+                    right: '2.5rem',
                     top: '50%',
                     transform: 'translateY(-50%)',
                     zIndex: 20,
-                    background: 'rgba(0,0,0,0.3)',
-                    border: 'none',
+                    background: 'rgba(0,0,0,0.35)',
+                    border: '1px solid rgba(255,255,255,0.15)',
                     borderRadius: '50%',
-                    padding: '1rem',
+                    width: '56px',
+                    height: '56px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     cursor: 'pointer',
                     color: '#fff',
                     transition: 'all 0.3s',
+                    backdropFilter: 'blur(4px)',
+                    padding: 0,
                 }}
             >
-                <ChevronRight size={32} />
+                <ChevronRight size={28} />
             </button>
 
             {/* Pagination */}
@@ -232,6 +250,10 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                 .banner-pagination .swiper-pagination-bullet-active {
                     background: #D4AF37;
                     transform: scale(1.2);
+                }
+                .banner-prev:hover, .banner-next:hover {
+                    background: rgba(0,0,0,0.6) !important;
+                    border-color: rgba(212,175,55,0.5) !important;
                 }
             `}</style>
         </section>
