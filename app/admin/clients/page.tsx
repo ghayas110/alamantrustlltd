@@ -23,9 +23,9 @@ export default async function ClientsDashboard() {
         <div className="!px-6 !py-5 !border-b !border-gray-100 !bg-gray-50/50 !flex !gap-4 !m-0">
           <div className="!relative !flex-1 !max-w-md !m-0 !p-0 !flex !items-center">
             <Search className="!w-5 !h-5 !absolute !left-4 !text-gray-400 !z-10" />
-            <input 
-              type="text" 
-              placeholder="Search clients by name or email..." 
+            <input
+              type="text"
+              placeholder="Search clients by name or email..."
               className="!w-full !m-0 !border-[1.5px] !border-gray-200 !rounded-xl focus:!outline-none focus:!border-[#C5A473] focus:!ring-0 !bg-[#FFFFFF] !text-[14px]"
               style={{ paddingLeft: '3rem', paddingRight: '1rem', paddingTop: '0.75rem', paddingBottom: '0.75rem', height: 'auto', boxSizing: 'border-box' }}
             />
@@ -42,7 +42,7 @@ export default async function ClientsDashboard() {
             </tr>
           </thead>
           <tbody className="!divide-y !divide-gray-100">
-            {clients.map(client => (
+            {clients.map((client: any) => (
               <tr key={client.id} className="hover:!bg-gray-50/50 !transition-colors !group text-left leading-normal">
                 <td className="!px-6 !py-5 !m-0">
                   <div className="!flex !items-center !gap-4 !m-0 !p-0">

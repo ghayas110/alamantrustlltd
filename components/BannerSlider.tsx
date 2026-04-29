@@ -255,6 +255,14 @@ export default function BannerSlider({ slides }: BannerSliderProps) {
                     background: rgba(0,0,0,0.6) !important;
                     border-color: rgba(212,175,55,0.5) !important;
                 }
+                /* Force hide inactive slides to prevent overlap */
+                .swiper-slide:not(.swiper-slide-active) {
+                    opacity: 0 !important;
+                    pointer-events: none;
+                }
+                .swiper-slide {
+                    transition: opacity 1s ease !important;
+                }
             `}</style>
         </section>
     );
